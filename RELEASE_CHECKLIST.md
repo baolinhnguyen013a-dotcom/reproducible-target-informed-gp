@@ -17,14 +17,14 @@ Required before public release:
 
 - [x] Confirm the correct GitHub owner and repository name.
 - [x] Select an explicit software/data license (MIT).
-- [ ] Create and push the public repository.
-- [ ] Replace the paper's pending Code Availability statement with the public
+- [x] Create and push the public repository.
+- [x] Replace the paper's pending Code Availability statement with the public
   repository URL and rebuild the five-page PDF.
-- [ ] Create GitHub release `v1.0.0`.
+- [x] Create GitHub release `v1.0.0`.
 - [ ] Connect the repository to Zenodo, archive `v1.0.0`, and add the assigned
   DOI to `CITATION.cff`, `.zenodo.json`, the README, and the paper if timing
   permits.
-- [ ] Rerun both audits and verify the release archive from a clean extraction.
+- [x] Rerun both audits and verify the release archive from a clean extraction.
 
 The GitHub display name “Addy Tong Lok” and manuscript name “Le Dong” identify
 the same author; this alias is disclosed in the README and citation metadata.
