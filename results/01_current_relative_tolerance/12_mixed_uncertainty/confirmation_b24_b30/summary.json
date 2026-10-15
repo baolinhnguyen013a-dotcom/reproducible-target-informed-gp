@@ -1,0 +1,128 @@
+[
+  {
+    "policy": "cei",
+    "budget": 24,
+    "cases": 90,
+    "mean_u": 0.01031797946881674,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.8888888888888888,
+    "top10_rate": 0.9888888888888889
+  },
+  {
+    "policy": "cei",
+    "budget": 25,
+    "cases": 90,
+    "mean_u": 0.004569858491864513,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9222222222222223,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei",
+    "budget": 26,
+    "cases": 90,
+    "mean_u": 0.002131061232369563,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9333333333333333,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei",
+    "budget": 27,
+    "cases": 90,
+    "mean_u": 0.0013047204522232101,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9444444444444444,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei",
+    "budget": 28,
+    "cases": 90,
+    "mean_u": 0.00021682116143162525,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9888888888888889,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei",
+    "budget": 29,
+    "cases": 90,
+    "mean_u": 0.00013332240233694459,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9888888888888889,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei",
+    "budget": 30,
+    "cases": 90,
+    "mean_u": 0.0,
+    "qualification_rate": 1.0,
+    "exact_rate": 1.0,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 24,
+    "cases": 90,
+    "mean_u": 0.007672153352135043,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.8888888888888888,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 25,
+    "cases": 90,
+    "mean_u": 0.0037971212009809564,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9111111111111111,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 26,
+    "cases": 90,
+    "mean_u": 0.0031964844629210486,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9222222222222223,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 27,
+    "cases": 90,
+    "mean_u": 0.0006360614077695063,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9777777777777777,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 28,
+    "cases": 90,
+    "mean_u": 0.00021682116143162525,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9888888888888889,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 29,
+    "cases": 90,
+    "mean_u": 0.0,
+    "qualification_rate": 1.0,
+    "exact_rate": 1.0,
+    "top10_rate": 1.0
+  },
+  {
+    "policy": "cei_all",
+    "budget": 30,
+    "cases": 90,
+    "mean_u": 0.0,
+    "qualification_rate": 1.0,
+    "exact_rate": 1.0,
+    "top10_rate": 1.0
+  }
+]

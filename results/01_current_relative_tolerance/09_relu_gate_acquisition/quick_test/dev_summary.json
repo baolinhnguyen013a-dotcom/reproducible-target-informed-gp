@@ -1,0 +1,41 @@
+{
+  "methods": [
+    {
+      "method": "relu",
+      "lambda": 0.0,
+      "n": 2,
+      "mean_loss_mean": 0.8079027498701516,
+      "mean_loss_sd": 0.015034517916798001,
+      "mae_L_mH_mean": 19.779652984444624,
+      "mae_L_mH_sd": 2.352615694274732,
+      "mae_R_ohm_mean": 4.07784167822909,
+      "mae_R_ohm_sd": 0.23014554507362675,
+      "feasibility_rate": 0.1954022988505747,
+      "exact_optimum_rate": 0.13218390804597702
+    },
+    {
+      "method": "relu",
+      "lambda": 1.0,
+      "n": 2,
+      "mean_loss_mean": 0.8941932434766549,
+      "mean_loss_sd": 0.13627066424033546,
+      "mae_L_mH_mean": 19.785524347960006,
+      "mae_L_mH_sd": 4.45136064027293,
+      "mae_R_ohm_mean": 4.281084373946121,
+      "mae_R_ohm_sd": 0.4620028433280699,
+      "feasibility_rate": 0.10919540229885058,
+      "exact_optimum_rate": 0.04597701149425287
+    }
+  ],
+  "paired_vs_lambda_0": [
+    {
+      "lambda": 1.0,
+      "paired_n": 2,
+      "difference_loss_mean": 0.08629049360650315,
+      "ci95_low": -0.02069842672547173,
+      "ci95_high": 0.19327941393847803,
+      "improved_seed_fraction": 0.5,
+      "tied_seed_fraction": 0.0
+    }
+  ]
+}

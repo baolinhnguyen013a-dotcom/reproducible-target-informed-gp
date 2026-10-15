@@ -1,0 +1,21 @@
+name: Reproducibility audits
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install audit dependencies
+        run: python -m pip install -r requirements-audit.txt
+      - name: Audit numerical evidence
+        run: python essay/scripts/audit_revised_manuscript.py --numerical-only
+      - name: Audit matched Maxwell evidence
+        run: python essay/scripts/audit_aedt_wpt_matched.py

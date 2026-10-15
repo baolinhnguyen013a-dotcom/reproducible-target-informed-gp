@@ -1,0 +1,149 @@
+{
+  "active_score": "0.5*unit(cEI) + 0.5*unit(cEI with effective sigma .8/.1/.1)",
+  "all_confirmation_policies_share_active_history": true,
+  "joint_active_history_equals_sigma_90_05_05_history": true,
+  "pure_cei_reference_mean_R_ohm": 0.3280638719447679,
+  "results": [
+    {
+      "policy": "hard_minsep_0p30",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.3370340208420332,
+      "population_std_R_ohm": 0.020016357684454495,
+      "mean_pair_min_distance": 0.34864420767437104,
+      "mean_difference_vs_pure_cei_ohm": 0.008970148897265311,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.0008639424376754746,
+        0.020802380387861752
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": 0.0,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        0.0,
+        0.0
+      ],
+      "seed_wins_vs_joint_original": 0,
+      "seed_ties_vs_joint_original": 10,
+      "wilcoxon_p_vs_joint_original": null
+    },
+    {
+      "policy": "hard_minsep_0p40",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.33663899731620794,
+      "population_std_R_ohm": 0.02043284128989527,
+      "mean_pair_min_distance": 0.4102157822229236,
+      "mean_difference_vs_pure_cei_ohm": 0.0085751253714401,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.0007969531232895399,
+        0.020340367547650607
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": -0.00039502352582521105,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        -0.0011850705774756332,
+        0.0
+      ],
+      "seed_wins_vs_joint_original": 1,
+      "seed_ties_vs_joint_original": 9,
+      "wilcoxon_p_vs_joint_original": 0.31731050786291415
+    },
+    {
+      "policy": "original_top12",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.3370340208420332,
+      "population_std_R_ohm": 0.020016357684454495,
+      "mean_pair_min_distance": 0.28874588434737997,
+      "mean_difference_vs_pure_cei_ohm": 0.008970148897265311,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.00088861989057758,
+        0.02082826216323456
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": 0.0,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        0.0,
+        0.0
+      ],
+      "seed_wins_vs_joint_original": 0,
+      "seed_ties_vs_joint_original": 10,
+      "wilcoxon_p_vs_joint_original": null
+    },
+    {
+      "policy": "soft_distance_active_and_batch",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.3440286372789211,
+      "population_std_R_ohm": 0.01845640300836356,
+      "mean_pair_min_distance": 1.0754704569939468,
+      "mean_difference_vs_pure_cei_ohm": 0.01596476533415319,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.005683980333937366,
+        0.027971447802764192
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": 0.0069946164368878795,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        0.0008419740695310651,
+        0.015163110017940106
+      ],
+      "seed_wins_vs_joint_original": 0,
+      "seed_ties_vs_joint_original": 6,
+      "wilcoxon_p_vs_joint_original": 0.06788915486182899
+    },
+    {
+      "policy": "soft_distance_batch",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.3440286372789211,
+      "population_std_R_ohm": 0.01845640300836356,
+      "mean_pair_min_distance": 1.1714092988191271,
+      "mean_difference_vs_pure_cei_ohm": 0.01596476533415319,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.005710633666697523,
+        0.02807694896274516
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": 0.0069946164368878795,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        0.0008419740695310651,
+        0.015163110017940106
+      ],
+      "seed_wins_vs_joint_original": 0,
+      "seed_ties_vs_joint_original": 6,
+      "wilcoxon_p_vs_joint_original": 0.06788915486182899
+    },
+    {
+      "policy": "soft_distance_batch_p0p10",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.33663899731620794,
+      "population_std_R_ohm": 0.02043284128989527,
+      "mean_pair_min_distance": 0.3464060064018624,
+      "mean_difference_vs_pure_cei_ohm": 0.0085751253714401,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.0007969531232895399,
+        0.020273175224224577
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": -0.00039502352582521105,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        -0.0011850705774756332,
+        0.0
+      ],
+      "seed_wins_vs_joint_original": 1,
+      "seed_ties_vs_joint_original": 9,
+      "wilcoxon_p_vs_joint_original": 0.31731050786291415
+    },
+    {
+      "policy": "soft_distance_batch_p0p20",
+      "qualification": "10/10",
+      "mean_R_ohm": 0.34082479834651824,
+      "population_std_R_ohm": 0.022126453952029473,
+      "mean_pair_min_distance": 0.3985768804135016,
+      "mean_difference_vs_pure_cei_ohm": 0.012760926401750338,
+      "paired_bootstrap_95pct_ci_vs_pure_cei_ohm": [
+        0.002994555214881267,
+        0.025153215746839395
+      ],
+      "mean_difference_vs_joint_original_confirmation_ohm": 0.0037907775044850266,
+      "paired_bootstrap_95pct_ci_vs_joint_original_ohm": [
+        0.0,
+        0.01137233251345508
+      ],
+      "seed_wins_vs_joint_original": 0,
+      "seed_ties_vs_joint_original": 9,
+      "wilcoxon_p_vs_joint_original": 0.31731050786291415
+    }
+  ],
+  "interpretation": "The joint acquisition collapses to the previously observed GP-heavy effective-sigma trajectory and is worse than pure cEI. Mild diversity changes one seed without resolving the gap; strong diversity overexplores."
+}

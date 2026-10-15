@@ -1,0 +1,8 @@
+{
+  "chosen_lambda_on_dev": 0.25,
+  "criterion": "minimum dev mean bounded loss",
+  "confirmatory_test_lambdas": [
+    0,
+    0.25
+  ]
+}

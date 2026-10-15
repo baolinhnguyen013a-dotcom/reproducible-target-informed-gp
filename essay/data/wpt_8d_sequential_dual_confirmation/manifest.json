@@ -1,0 +1,40 @@
+{
+  "method": "sequential dual-proposal confirmation",
+  "base_active_history": "pure cEI, 6 initial + 32 sequential",
+  "sigma_weights_gp_disagreement_ntk": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "confidence_gate": "larger normalized top-versus-runner-up acquisition margin, with exact 6/6 quota",
+  "same_history_for_both_proposers": true,
+  "refit_after_each_confirmation": true,
+  "budget": {
+    "initial": 6,
+    "sequential": 32,
+    "confirmation": 12,
+    "total": 50
+  },
+  "candidate_count": 2400,
+  "ensemble_members": 10,
+  "epochs": 120,
+  "seeds": [
+    34261011,
+    34261012,
+    34261013,
+    34261014,
+    34261015,
+    34261016,
+    34261017,
+    34261018,
+    34261019,
+    34261020
+  ],
+  "policies": [
+    "sequential_cei_only",
+    "sequential_sigma_only",
+    "alternate_cei_first",
+    "alternate_sigma_first",
+    "confidence_gate_6_6"
+  ]
+}

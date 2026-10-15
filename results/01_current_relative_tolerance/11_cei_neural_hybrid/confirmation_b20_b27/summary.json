@@ -1,0 +1,98 @@
+[
+  {
+    "stage": "confirmation",
+    "method": "cei_gp_global",
+    "beta": 0.2,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.15739412134813802,
+    "qualification_rate": 0.8850574712643678,
+    "exact_rate": 0.4114942528735632,
+    "top10_rate": 0.8563218390804598,
+    "mean_runtime_sec": 3.686985610250575
+  },
+  {
+    "stage": "confirmation",
+    "method": "cei_gp_global",
+    "beta": 0.2,
+    "budget": 27,
+    "cases": 870,
+    "mean_u": 0.0009913243545498665,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9827586206896551,
+    "top10_rate": 1.0,
+    "mean_runtime_sec": 13.854312337727581
+  },
+  {
+    "stage": "confirmation",
+    "method": "cei_nn_disagreement",
+    "beta": 0.2,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.15001359124795577,
+    "qualification_rate": 0.8919540229885058,
+    "exact_rate": 0.4298850574712644,
+    "top10_rate": 0.8701149425287357,
+    "mean_runtime_sec": 5.1462725343885
+  },
+  {
+    "stage": "confirmation",
+    "method": "cei_nn_disagreement",
+    "beta": 0.2,
+    "budget": 27,
+    "cases": 870,
+    "mean_u": 0.00102830923629707,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9839080459770115,
+    "top10_rate": 1.0,
+    "mean_runtime_sec": 20.846942286598843
+  },
+  {
+    "stage": "confirmation",
+    "method": "cei_nn_ntk",
+    "beta": 0.2,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.1533234019481424,
+    "qualification_rate": 0.8885057471264368,
+    "exact_rate": 0.43333333333333335,
+    "top10_rate": 0.8655172413793103,
+    "mean_runtime_sec": 5.3225725115253
+  },
+  {
+    "stage": "confirmation",
+    "method": "cei_nn_ntk",
+    "beta": 0.2,
+    "budget": 27,
+    "cases": 870,
+    "mean_u": 0.0010897028814944437,
+    "qualification_rate": 1.0,
+    "exact_rate": 0.9827586206896551,
+    "top10_rate": 1.0,
+    "mean_runtime_sec": 21.939915082791945
+  },
+  {
+    "stage": "confirmation",
+    "method": "pure_cei",
+    "beta": 0.0,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.1938297505706574,
+    "qualification_rate": 0.8482758620689655,
+    "exact_rate": 0.38850574712643676,
+    "top10_rate": 0.8241379310344827,
+    "mean_runtime_sec": 3.7194711855057476
+  },
+  {
+    "stage": "confirmation",
+    "method": "pure_cei",
+    "beta": 0.0,
+    "budget": 27,
+    "cases": 870,
+    "mean_u": 0.04696013090415301,
+    "qualification_rate": 0.9540229885057471,
+    "exact_rate": 0.9367816091954023,
+    "top10_rate": 0.9540229885057471,
+    "mean_runtime_sec": 14.543903107373563
+  }
+]

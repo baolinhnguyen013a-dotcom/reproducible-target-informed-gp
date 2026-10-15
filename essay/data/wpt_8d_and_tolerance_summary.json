@@ -1,0 +1,70 @@
+{
+  "problem": "Planar Polygon WPT Coil Design: 8-D Geometric Synthesis and 6-DOF Spatial Tolerance",
+  "engine_source": "Mahdi Asadi & Amir Musa Abazari (IET Electric Power Applications, 2025)",
+  "formulation": {
+    "stage_1_geometric_design": {
+      "dimensions": 8,
+      "parameters": [
+        "ns_T (transmitter polygon sides: 4-10)",
+        "nt_T (transmitter turns: 5-15)",
+        "s_T (transmitter turn spacing: 1.0-3.0 mm)",
+        "r_i_T (transmitter inner radius: 30.0-80.0 mm)",
+        "ns_R (receiver polygon sides: 4-10)",
+        "nt_R (receiver turns: 5-15)",
+        "s_R (receiver turn spacing: 1.0-3.0 mm)",
+        "r_i_R (receiver inner radius: 30.0-80.0 mm)"
+      ],
+      "nominal_alignment": {
+        "axial_gap_z": "70.0 mm",
+        "lateral_offsets": "(0.0 mm, 0.0 mm)",
+        "angular_orientation": "(0.0 rad, 0.0 rad, 0.0 rad)"
+      },
+      "target_constraint": "M_t = 1500.0 nH (+/- 2.5%: [1462.5, 1537.5] nH)",
+      "objective": "Minimize total DC winding resistance R_total (Pouillet's Law)",
+      "results_budget_40": {
+        "gp_cei": {
+          "qualification_rate": 1.0,
+          "mean_resistance_ohm": 0.3007,
+          "std_resistance_ohm": 0.0032,
+          "best_resistance_ohm": 0.2974
+        },
+        "random_search": {
+          "qualification_rate": 0.60,
+          "mean_resistance_ohm": 0.3717,
+          "std_resistance_ohm": 0.0581,
+          "best_resistance_ohm": 0.3120,
+          "gp_cei_resistance_reduction_pct": 19.1
+        }
+      },
+      "results_budget_25": {
+        "gp_cei": {
+          "qualification_rate": 0.90,
+          "mean_resistance_ohm": 0.3310,
+          "std_resistance_ohm": 0.0293
+        },
+        "random_search": {
+          "qualification_rate": 0.50,
+          "mean_resistance_ohm": 0.3740,
+          "std_resistance_ohm": 0.0634
+        }
+      }
+    },
+    "stage_2_spatial_tolerance": {
+      "dimensions": 6,
+      "parameters": [
+        "v1 (lateral offset x: +/- 20 mm)",
+        "v2 (lateral offset y: +/- 20 mm)",
+        "v3 (axial gap tolerance: 60-80 mm around nominal 70 mm)",
+        "phi (roll angle: +/- 15 deg)",
+        "theta (pitch angle: +/- 15 deg)",
+        "psi (yaw angle: +/- 30 deg)"
+      ],
+      "tolerance_margins": {
+        "lateral_tolerance": "r_lat <= 15 mm maintains M within 4.15% deviation",
+        "angular_tilt_tolerance": "phi <= 15 deg maintains M within 1.15% deviation",
+        "axial_gap_sensitivity": "dz = +/- 5 mm causes +/- 13% deviation (primary sensitivity driver)"
+      },
+      "generalization_framework": "Robust chance-constrained BO: P_{s ~ S_tol}(|M_t(x, s) - M*|/M* <= epsilon) >= 1 - delta"
+    }
+  }
+}

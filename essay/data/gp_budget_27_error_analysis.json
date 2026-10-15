@@ -1,0 +1,67 @@
+{
+  "budget": 27,
+  "seeds": [
+    20261015,
+    20261016,
+    20261017,
+    20261018,
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024
+  ],
+  "targets_mH": [
+    1,
+    87
+  ],
+  "cases": 870,
+  "grid_prediction": {
+    "held_out_mae_mH": 0.11941690927381934,
+    "held_out_rmse_mH": 0.17219098190843962,
+    "held_out_max_error_mH": 0.6298419138068011,
+    "coverage_1sigma": 0.7303196347031963,
+    "coverage_2sigma": 0.9284018264840181,
+    "mean_sigma_mH": 0.15706283999375,
+    "error_sigma_correlation": 0.534276554519611
+  },
+  "current_decision_pool": {
+    "qualification_rate": 0.9988505747126437,
+    "mean_loss_all_cases": 0.0036986104077005406,
+    "mean_relative_regret_qualified": 0.002672828672979909,
+    "oracle_optimum_validation_recall": 0.8735632183908046
+  },
+  "expanded_decision_pool": {
+    "qualification_rate": 0.9988505747126437,
+    "mean_loss_all_cases": 0.0033953257164426012,
+    "cases_improved": 14,
+    "mean_loss_reduction_all_cases": 0.00030328469125793947
+  },
+  "target_bins": {
+    "1--20": {
+      "cases": 200,
+      "qualification_rate": 0.995,
+      "mean_loss": 0.012609578378243143,
+      "mean_relative_L_error": 0.011375628380147704
+    },
+    "21--40": {
+      "cases": 200,
+      "qualification_rate": 1.0,
+      "mean_loss": 0.002169043852130817,
+      "mean_relative_L_error": 0.009785631896705633
+    },
+    "41--60": {
+      "cases": 200,
+      "qualification_rate": 1.0,
+      "mean_loss": 0.0011262858038129963,
+      "mean_relative_L_error": 0.016214789018357448
+    },
+    "61--87": {
+      "cases": 270,
+      "qualification_rate": 1.0,
+      "mean_loss": 0.00013633128837807197,
+      "mean_relative_L_error": 0.019565876196433178
+    }
+  }
+}

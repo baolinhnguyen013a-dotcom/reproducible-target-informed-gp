@@ -1,0 +1,30 @@
+[
+  {
+    "policy": "sigma_80_15_05",
+    "sigma_weights_gp_disagreement_ntk": [
+      0.8,
+      0.15,
+      0.05
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.32915682335845736,
+    "std_R_qualified_ohm": 0.018478657525761475,
+    "mean_target_error_pct": 1.466141542892122,
+    "mean_runtime_sec": 36.25664308740001
+  },
+  {
+    "policy": "sigma_80_05_15",
+    "sigma_weights_gp_disagreement_ntk": [
+      0.8,
+      0.05,
+      0.15
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3311920511704477,
+    "std_R_qualified_ohm": 0.015756037513099615,
+    "mean_target_error_pct": 1.2427459755009294,
+    "mean_runtime_sec": 34.07582592920001
+  }
+]

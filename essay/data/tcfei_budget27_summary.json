@@ -1,0 +1,23 @@
+{
+  "tcfei": {
+    "cases": 870,
+    "qualification_rate": 1.0,
+    "all_case_mean_u": 0.0004960738420375422,
+    "targetwise_trimmed_mean_u": 3.824015135007451e-05,
+    "worst_seed_mean_u": 0.003202237251003005,
+    "worst_seed": 20261020,
+    "decision_sources": {
+      "active_acquisition": 838,
+      "validation": 27,
+      "initial": 5
+    }
+  },
+  "global_gp": {
+    "cases": 870,
+    "qualification_rate": 0.9988505747126437,
+    "all_case_mean_u": 0.0036986104077005406,
+    "targetwise_trimmed_mean_u": 0.0018617744144564655,
+    "worst_seed_mean_u": 0.012275497401824719,
+    "worst_seed": 20261023
+  }
+}

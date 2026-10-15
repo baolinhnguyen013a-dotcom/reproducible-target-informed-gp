@@ -1,0 +1,50 @@
+[
+  {
+    "stage": "development",
+    "method": "cei_nn_ntk",
+    "beta": 0.05,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.09916132635869446,
+    "qualification_rate": 0.9367816091954023,
+    "exact_rate": 0.5333333333333333,
+    "top10_rate": 0.9264367816091954,
+    "mean_runtime_sec": 5.31459695153793
+  },
+  {
+    "stage": "development",
+    "method": "cei_nn_ntk",
+    "beta": 0.1,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.10022903095008542,
+    "qualification_rate": 0.9356321839080459,
+    "exact_rate": 0.5310344827586206,
+    "top10_rate": 0.9252873563218391,
+    "mean_runtime_sec": 5.725339975870114
+  },
+  {
+    "stage": "development",
+    "method": "cei_nn_ntk",
+    "beta": 0.2,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.0990070167714075,
+    "qualification_rate": 0.9367816091954023,
+    "exact_rate": 0.532183908045977,
+    "top10_rate": 0.9264367816091954,
+    "mean_runtime_sec": 5.164560874390805
+  },
+  {
+    "stage": "development",
+    "method": "pure_cei",
+    "beta": 0.0,
+    "budget": 20,
+    "cases": 870,
+    "mean_u": 0.12044586069491119,
+    "qualification_rate": 0.9149425287356322,
+    "exact_rate": 0.5137931034482759,
+    "top10_rate": 0.9045977011494253,
+    "mean_runtime_sec": 3.337729141254024
+  }
+]

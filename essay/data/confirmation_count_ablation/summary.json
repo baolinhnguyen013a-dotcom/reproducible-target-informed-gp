@@ -1,0 +1,38 @@
+{
+  "status": "complete",
+  "source": "/Users/saishangjiangnandong/Desktop/algorithm_discussion/essay/data/center_stopping_1pct_deterministic_gp_k5/results.csv",
+  "scope": "14 development targets x 10 deterministic replay labels",
+  "method": "prefixes of each stored ranked confirmation list; no refit or retuning",
+  "results": [
+    {
+      "confirmations": 0,
+      "cases": 140,
+      "qualified_cases": 140,
+      "exact_optimum_cases": 140
+    },
+    {
+      "confirmations": 1,
+      "cases": 140,
+      "qualified_cases": 140,
+      "exact_optimum_cases": 140
+    },
+    {
+      "confirmations": 2,
+      "cases": 140,
+      "qualified_cases": 140,
+      "exact_optimum_cases": 140
+    },
+    {
+      "confirmations": 5,
+      "cases": 140,
+      "qualified_cases": 140,
+      "exact_optimum_cases": 140
+    },
+    {
+      "confirmations": 10,
+      "cases": 140,
+      "qualified_cases": 140,
+      "exact_optimum_cases": 140
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "relative_inductance_tolerance": 0.025,
+  "reference_calibration": "0.5 mH / 20 mH = 2.5%",
+  "ensemble_rule": "mean prediction only",
+  "loss": "r/(1+r), r=R/R_exhaustive-1; infeasible=1",
+  "aggregation": "For each target/method/budget, drop highest and lowest of 10 losses, then average 8."
+}

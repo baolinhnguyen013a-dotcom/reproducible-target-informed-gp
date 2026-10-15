@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "case_selection": "preselected by maximum initial mismatch before GP outcomes",
+  "inference_scope": "illustrative single stress case; not population-level proof",
+  "recorded_seed": 20261105,
+  "recorded_initial_points": [
+    [
+      10,
+      50
+    ],
+    [
+      10,
+      84
+    ],
+    [
+      8,
+      86
+    ],
+    [
+      8,
+      122
+    ],
+    [
+      6,
+      115
+    ],
+    [
+      10,
+      64
+    ]
+  ],
+  "random6_baseline": {
+    "method": "random6_pF_cEI_injected",
+    "seed": 20261105,
+    "target_mH": 2,
+    "budget": 27,
+    "initial_points": [
+      [
+        10,
+        50
+      ],
+      [
+        10,
+        84
+      ],
+      [
+        8,
+        86
+      ],
+      [
+        8,
+        122
+      ],
+      [
+        6,
+        115
+      ],
+      [
+        10,
+        64
+      ]
+    ],
+    "initial_L_mH": [
+      23.217084327034794,
+      49.12091758240852,
+      32.091138611598545,
+      50.97771538680671,
+      26.14999146421104,
+      33.439754481053214
+    ],
+    "acquisition_phases": [
+      "pF",
+      "pF",
+      "pF",
+      "pF",
+      "pF",
+      "pF",
+      "cEI",
+      "cEI",
+      "cEI"
+    ],
+    "first_feasible_evaluation": 12,
+    "qualified": true,
+    "exact": true,
+    "bounded_loss_u": 0.0,
+    "decision": {
+      "point": [
+        5,
+        25
+      ],
+      "L_mH": 1.952742612848387,
+      "R_ohm": 1.6726651167820064,
+      "stage": "sequential"
+    },
+    "model_building_ids": [
+      1029,
+      1063,
+      843,
+      879,
+      650,
+      1043,
+      1000,
+      888,
+      777,
+      555,
+      556,
+      449,
+      11,
+      31,
+      87
+    ],
+    "confirmation_ids": [
+      347,
+      348,
+      257,
+      256,
+      258,
+      255,
+      259,
+      260,
+      254,
+      195,
+      261,
+      196
+    ]
+  },
+  "deterministic_automatic": {
+    "policy": "ordinary_stop",
+    "seed": 20261015,
+    "target_mH": 2,
+    "qualified": true,
+    "exact": true,
+    "bounded_loss_u": 0.0,
+    "relative_resistance_regret": 0.0,
+    "decision_T": 5,
+    "decision_n": 25,
+    "decision_L_mH": 1.952742612848387,
+    "decision_R_ohm": 1.6726651167820064,
+    "decision_stage": "model_building",
+    "oracle_calls": 23,
+    "n_model_building": 13,
+    "n_confirmation": 10,
+    "stopped_naturally": true,
+    "first_feasible_evaluation": 9,
+    "final_rho": 0.001515052963174092,
+    "final_cosine_weight": 0.0,
+    "model_building_ids": "[499, 999, 1031, 888, 555, 112, 556, 447, 449, 14, 19, 53, 69]",
+    "confirmation_ids": "[346, 249, 248, 250, 251, 347, 247, 174, 175, 173]"
+  },
+  "comparison": {
+    "random6_exact": true,
+    "deterministic_exact": true,
+    "random6_calls": 27,
+    "deterministic_calls": 23,
+    "bounded_loss_difference_random_minus_deterministic": 0.0
+  }
+}

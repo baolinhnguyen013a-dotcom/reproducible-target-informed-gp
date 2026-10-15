@@ -1,0 +1,23 @@
+{
+  "method": "gp",
+  "budget": 27,
+  "seeds": [
+    20261015,
+    20261016,
+    20261017,
+    20261018,
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024
+  ],
+  "targets_mH": [
+    1,
+    87
+  ],
+  "relative_inductance_tolerance": 0.025,
+  "budget_composition": "6 initial + 9 maximum-uncertainty acquisitions + 12 validations",
+  "decision_rule": "Same GP rule as the main relative-tolerance sweep; final choice is from 12 validations."
+}

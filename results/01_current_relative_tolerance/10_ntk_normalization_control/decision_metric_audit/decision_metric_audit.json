@@ -1,0 +1,119 @@
+{
+  "definition": "top10_return means that the final minimum-resistance feasible design among the 12 validations is one of the ten lowest-resistance feasible configurations in exhaustive search for that target",
+  "aggregate": {
+    "ntk_dynamic": {
+      "mae_L_mH": 0.9113908130904427,
+      "mae_R_ohm": 0.26261345283050924,
+      "mean_loss": 0.049293555268968926,
+      "feasible_targets": 83.57,
+      "exact_optima": 70.07,
+      "top10_returns": 83.34,
+      "exact_rate": 0.8054022988505746,
+      "top10_rate": 0.9579310344827587
+    },
+    "ntk_fixed": {
+      "mae_L_mH": 0.8696991933201746,
+      "mae_R_ohm": 0.2583700449764423,
+      "mean_loss": 0.051872211809827186,
+      "feasible_targets": 83.33,
+      "exact_optima": 70.74,
+      "top10_returns": 82.92,
+      "exact_rate": 0.8131034482758619,
+      "top10_rate": 0.953103448275862
+    },
+    "uncertainty_dynamic": {
+      "mae_L_mH": 0.8104331922068088,
+      "mae_R_ohm": 0.16924915451700348,
+      "mean_loss": 0.05818107133633847,
+      "feasible_targets": 83.0,
+      "exact_optima": 66.36,
+      "top10_returns": 82.63,
+      "exact_rate": 0.7627586206896553,
+      "top10_rate": 0.9497701149425289
+    },
+    "uncertainty_fixed": {
+      "mae_L_mH": 0.8304725724729652,
+      "mae_R_ohm": 0.17424055631478513,
+      "mean_loss": 0.07355532010228438,
+      "feasible_targets": 81.91,
+      "exact_optima": 61.94,
+      "top10_returns": 81.47,
+      "exact_rate": 0.711954022988506,
+      "top10_rate": 0.9364367816091956
+    }
+  },
+  "within_method_spearman_correlations": {
+    "ntk_dynamic": {
+      "mae_L_mH": {
+        "spearman_rho_with_mean_loss": 0.2804080408040804,
+        "two_sided_p": 0.004716992885778346
+      },
+      "mae_R_ohm": {
+        "spearman_rho_with_mean_loss": 0.021242124212421238,
+        "two_sided_p": 0.8338438817850479
+      },
+      "exact_rate": {
+        "spearman_rho_with_mean_loss": -0.3626690814727098,
+        "two_sided_p": 0.00020875974058181363
+      },
+      "top10_rate": {
+        "spearman_rho_with_mean_loss": -0.9554974069364621,
+        "two_sided_p": 9.269624401331617e-54
+      }
+    },
+    "ntk_fixed": {
+      "mae_L_mH": {
+        "spearman_rho_with_mean_loss": 0.2754395439543954,
+        "two_sided_p": 0.0055434359254870865
+      },
+      "mae_R_ohm": {
+        "spearman_rho_with_mean_loss": -0.026306630663066304,
+        "two_sided_p": 0.7950150667351885
+      },
+      "exact_rate": {
+        "spearman_rho_with_mean_loss": -0.26597735119774896,
+        "two_sided_p": 0.007479752796882921
+      },
+      "top10_rate": {
+        "spearman_rho_with_mean_loss": -0.9614595261768966,
+        "two_sided_p": 9.29516981713846e-57
+      }
+    },
+    "uncertainty_dynamic": {
+      "mae_L_mH": {
+        "spearman_rho_with_mean_loss": 0.4231743174317431,
+        "two_sided_p": 1.152063880734632e-05
+      },
+      "mae_R_ohm": {
+        "spearman_rho_with_mean_loss": 0.023378337833783375,
+        "two_sided_p": 0.8174113805989938
+      },
+      "exact_rate": {
+        "spearman_rho_with_mean_loss": -0.2892958373444033,
+        "two_sided_p": 0.0035083919031484684
+      },
+      "top10_rate": {
+        "spearman_rho_with_mean_loss": -0.9572558281021828,
+        "two_sided_p": 1.3412079856476678e-54
+      }
+    },
+    "uncertainty_fixed": {
+      "mae_L_mH": {
+        "spearman_rho_with_mean_loss": 0.33718571857185714,
+        "two_sided_p": 0.0006024624415133359
+      },
+      "mae_R_ohm": {
+        "spearman_rho_with_mean_loss": -0.06759075907590759,
+        "two_sided_p": 0.5040222295614398
+      },
+      "exact_rate": {
+        "spearman_rho_with_mean_loss": -0.41837014350250556,
+        "two_sided_p": 1.4808731040017136e-05
+      },
+      "top10_rate": {
+        "spearman_rho_with_mean_loss": -0.9156514308194484,
+        "two_sided_p": 1.4255159922920328e-40
+      }
+    }
+  }
+}

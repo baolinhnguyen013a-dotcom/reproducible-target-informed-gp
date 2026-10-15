@@ -1,0 +1,8 @@
+{
+  "initial_samples": 6,
+  "maximum_true_evaluations": 16,
+  "seed": 20261016,
+  "final_validation_count": 10,
+  "mc_dropout_samples": 1000,
+  "run_status": "failed"
+}

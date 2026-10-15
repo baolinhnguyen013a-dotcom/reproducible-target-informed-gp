@@ -1,0 +1,88 @@
+{
+  "method": "Global dual-response GP active learning",
+  "alpha": 0.5,
+  "fixed_scales": {
+    "L_mH": 21.11277339447724,
+    "R_ohm": 4.603602884642203
+  },
+  "model_building_evaluations": 15,
+  "final_validation_count": 12,
+  "decision": {
+    "point": [
+      10,
+      45
+    ],
+    "L_mH": 19.777287339024745,
+    "R_ohm": 6.278828979238753,
+    "feasible": true,
+    "predicted_mean_L_mH": 20.181599474350083,
+    "sigma_L_mH": 0.2857382488001564,
+    "predicted_mean_R_ohm": 6.276320030454934,
+    "sigma_R_ohm": 0.00546565107578912
+  },
+  "acquisition_trace": [
+    {
+      "point": [
+        5,
+        20
+      ],
+      "score": 0.48063203387204384
+    },
+    {
+      "point": [
+        10,
+        77
+      ],
+      "score": 0.20522866661623992
+    },
+    {
+      "point": [
+        10,
+        20
+      ],
+      "score": 0.12448334948997367
+    },
+    {
+      "point": [
+        10,
+        130
+      ],
+      "score": 0.09087713678308532
+    },
+    {
+      "point": [
+        1,
+        130
+      ],
+      "score": 0.09251433555632271
+    },
+    {
+      "point": [
+        1,
+        20
+      ],
+      "score": 0.023227214747216916
+    },
+    {
+      "point": [
+        3,
+        20
+      ],
+      "score": 0.01885760219426859
+    },
+    {
+      "point": [
+        7,
+        130
+      ],
+      "score": 0.012145199224198792
+    },
+    {
+      "point": [
+        8,
+        20
+      ],
+      "score": 0.004067279236456633
+    }
+  ]
+}

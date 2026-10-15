@@ -1,0 +1,72 @@
+[
+  {
+    "confirmation_policy": "original_top12",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3370340208420332,
+    "std_R_qualified_ohm": 0.020016357684454495,
+    "mean_target_error_pct": 1.3857179088669,
+    "mean_pair_min_distance": 0.28874588434737997,
+    "mean_min_active_distance": 0.22794882529269148
+  },
+  {
+    "confirmation_policy": "soft_distance_batch_p0p10",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.33663899731620794,
+    "std_R_qualified_ohm": 0.02043284128989527,
+    "mean_target_error_pct": 1.4604944781251956,
+    "mean_pair_min_distance": 0.3464060064018624,
+    "mean_min_active_distance": 0.2323206946398726
+  },
+  {
+    "confirmation_policy": "soft_distance_batch_p0p20",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.34082479834651824,
+    "std_R_qualified_ohm": 0.022126453952029473,
+    "mean_target_error_pct": 1.395305319021706,
+    "mean_pair_min_distance": 0.3985768804135016,
+    "mean_min_active_distance": 0.23342155331815678
+  },
+  {
+    "confirmation_policy": "soft_distance_batch",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3440286372789211,
+    "std_R_qualified_ohm": 0.01845640300836356,
+    "mean_target_error_pct": 1.3423082342017882,
+    "mean_pair_min_distance": 1.1714092988191271,
+    "mean_min_active_distance": 0.25191402755255893
+  },
+  {
+    "confirmation_policy": "soft_distance_active_and_batch",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3440286372789211,
+    "std_R_qualified_ohm": 0.01845640300836356,
+    "mean_target_error_pct": 1.3423082342017882,
+    "mean_pair_min_distance": 1.0754704569939468,
+    "mean_min_active_distance": 1.0489284071151745
+  },
+  {
+    "confirmation_policy": "hard_minsep_0p30",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3370340208420332,
+    "std_R_qualified_ohm": 0.020016357684454495,
+    "mean_target_error_pct": 1.3857179088669,
+    "mean_pair_min_distance": 0.34864420767437104,
+    "mean_min_active_distance": 0.22794882529269148
+  },
+  {
+    "confirmation_policy": "hard_minsep_0p40",
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.33663899731620794,
+    "std_R_qualified_ohm": 0.02043284128989527,
+    "mean_target_error_pct": 1.4604944781251956,
+    "mean_pair_min_distance": 0.4102157822229236,
+    "mean_min_active_distance": 0.24019232810700944
+  }
+]

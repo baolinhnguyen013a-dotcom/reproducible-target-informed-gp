@@ -1,0 +1,17 @@
+[
+  {
+    "policy": "cei_all05",
+    "weights": [
+      0.85,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.33068842095856715,
+    "std_R_qualified_ohm": 0.022833330593726237,
+    "mean_target_error_pct": 1.3506924841203833,
+    "mean_runtime_sec": 55.93371922920001
+  }
+]

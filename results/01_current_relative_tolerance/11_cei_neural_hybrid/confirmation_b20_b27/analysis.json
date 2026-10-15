@@ -1,0 +1,228 @@
+{
+  "summary": [
+    {
+      "method": "cei_gp_global",
+      "budget": 20,
+      "cases": 870,
+      "mean_u": 0.15739412134813802,
+      "qualification_rate": 0.8850574712643678,
+      "exact_rate": 0.4114942528735632,
+      "top10_rate": 0.8563218390804598,
+      "mean_runtime_sec": 3.686985610250575
+    },
+    {
+      "method": "cei_gp_global",
+      "budget": 27,
+      "cases": 870,
+      "mean_u": 0.0009913243545498656,
+      "qualification_rate": 1.0,
+      "exact_rate": 0.9827586206896551,
+      "top10_rate": 1.0,
+      "mean_runtime_sec": 13.854312337727581
+    },
+    {
+      "method": "cei_nn_disagreement",
+      "budget": 20,
+      "cases": 870,
+      "mean_u": 0.15001359124795577,
+      "qualification_rate": 0.8919540229885058,
+      "exact_rate": 0.4298850574712644,
+      "top10_rate": 0.8701149425287357,
+      "mean_runtime_sec": 5.1462725343885
+    },
+    {
+      "method": "cei_nn_disagreement",
+      "budget": 27,
+      "cases": 870,
+      "mean_u": 0.0010283092362970692,
+      "qualification_rate": 1.0,
+      "exact_rate": 0.9839080459770115,
+      "top10_rate": 1.0,
+      "mean_runtime_sec": 20.846942286598843
+    },
+    {
+      "method": "cei_nn_ntk",
+      "budget": 20,
+      "cases": 870,
+      "mean_u": 0.1533234019481424,
+      "qualification_rate": 0.8885057471264368,
+      "exact_rate": 0.43333333333333335,
+      "top10_rate": 0.8655172413793103,
+      "mean_runtime_sec": 5.3225725115253
+    },
+    {
+      "method": "cei_nn_ntk",
+      "budget": 27,
+      "cases": 870,
+      "mean_u": 0.0010897028814944427,
+      "qualification_rate": 1.0,
+      "exact_rate": 0.9827586206896551,
+      "top10_rate": 1.0,
+      "mean_runtime_sec": 21.939915082791945
+    },
+    {
+      "method": "pure_cei",
+      "budget": 20,
+      "cases": 870,
+      "mean_u": 0.19382975057065738,
+      "qualification_rate": 0.8482758620689655,
+      "exact_rate": 0.38850574712643676,
+      "top10_rate": 0.8241379310344827,
+      "mean_runtime_sec": 3.7194711855057476
+    },
+    {
+      "method": "pure_cei",
+      "budget": 27,
+      "cases": 870,
+      "mean_u": 0.04696013090415301,
+      "qualification_rate": 0.9540229885057471,
+      "exact_rate": 0.9367816091954023,
+      "top10_rate": 0.9540229885057471,
+      "mean_runtime_sec": 14.543903107373563
+    }
+  ],
+  "paired_vs_pure_cei": {
+    "20": {
+      "cei_gp_global": {
+        "mean_difference": -0.03643562922251937,
+        "ci95": [
+          -0.11026804590253855,
+          0.015672269569016437
+        ],
+        "seed_wins": 5,
+        "seed_losses": 4,
+        "seed_ties": 1
+      },
+      "cei_nn_disagreement": {
+        "mean_difference": -0.04381615932270161,
+        "ci95": [
+          -0.11828929983180254,
+          0.015150211454334154
+        ],
+        "seed_wins": 5,
+        "seed_losses": 5,
+        "seed_ties": 0
+      },
+      "cei_nn_ntk": {
+        "mean_difference": -0.04050634862251502,
+        "ci95": [
+          -0.1227876783224062,
+          0.030407345563136567
+        ],
+        "seed_wins": 5,
+        "seed_losses": 4,
+        "seed_ties": 1
+      }
+    },
+    "27": {
+      "cei_gp_global": {
+        "mean_difference": -0.04596880654960314,
+        "ci95": [
+          -0.11027684307160206,
+          0.0
+        ],
+        "seed_wins": 3,
+        "seed_losses": 0,
+        "seed_ties": 7
+      },
+      "cei_nn_disagreement": {
+        "mean_difference": -0.04593182166785594,
+        "ci95": [
+          -0.11037445484428085,
+          0.0001485629624864816
+        ],
+        "seed_wins": 3,
+        "seed_losses": 1,
+        "seed_ties": 6
+      },
+      "cei_nn_ntk": {
+        "mean_difference": -0.045870428022658574,
+        "ci95": [
+          -0.11013081832147911,
+          0.0001162732371320417
+        ],
+        "seed_wins": 4,
+        "seed_losses": 1,
+        "seed_ties": 5
+      }
+    }
+  },
+  "paired_between_supplements": {
+    "20": {
+      "cei_nn_ntk_minus_cei_gp_global": {
+        "mean_difference": -0.00407071939999565,
+        "ci95": [
+          -0.0409145953266588,
+          0.0255989483582894
+        ],
+        "seed_wins": 4,
+        "seed_losses": 6,
+        "seed_ties": 0
+      },
+      "cei_nn_ntk_minus_cei_nn_disagreement": {
+        "mean_difference": 0.003309810700186595,
+        "ci95": [
+          -0.006461921133777608,
+          0.01669673300671154
+        ],
+        "seed_wins": 4,
+        "seed_losses": 6,
+        "seed_ties": 0
+      },
+      "cei_nn_disagreement_minus_cei_gp_global": {
+        "mean_difference": -0.007380530100182245,
+        "ci95": [
+          -0.03950652694198601,
+          0.012611667015587911
+        ],
+        "seed_wins": 4,
+        "seed_losses": 6,
+        "seed_ties": 0
+      }
+    },
+    "27": {
+      "cei_nn_ntk_minus_cei_gp_global": {
+        "mean_difference": 9.837852694457712e-05,
+        "ci95": [
+          -0.00015472387591610584,
+          0.0003747334822072533
+        ],
+        "seed_wins": 2,
+        "seed_losses": 2,
+        "seed_ties": 6
+      },
+      "cei_nn_ntk_minus_cei_nn_disagreement": {
+        "mean_difference": 6.139364519737345e-05,
+        "ci95": [
+          -9.686917606331966e-05,
+          0.00028105011165544
+        ],
+        "seed_wins": 1,
+        "seed_losses": 1,
+        "seed_ties": 8
+      },
+      "cei_nn_disagreement_minus_cei_gp_global": {
+        "mean_difference": 3.698488174720368e-05,
+        "ci95": [
+          -0.00015472387591610584,
+          0.0002656785211577169
+        ],
+        "seed_wins": 1,
+        "seed_losses": 1,
+        "seed_ties": 8
+      }
+    }
+  },
+  "acquisition_set_change_rate_vs_pure_cei": {
+    "20": {
+      "cei_gp_global": 0.3781609195402299,
+      "cei_nn_disagreement": 0.42873563218390803,
+      "cei_nn_ntk": 0.4724137931034483
+    },
+    "27": {
+      "cei_gp_global": 0.9494252873563218,
+      "cei_nn_disagreement": 0.957471264367816,
+      "cei_nn_ntk": 0.9551724137931035
+    }
+  }
+}

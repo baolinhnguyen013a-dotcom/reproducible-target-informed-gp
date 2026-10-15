@@ -1,0 +1,40 @@
+{
+  "all_five_policies_qualify": "10/10",
+  "all_five_policies_have_identical_final_decision_per_seed": true,
+  "mean_R_all_sequential_policies_ohm": 0.3291627744950838,
+  "population_std_R_all_sequential_policies_ohm": 0.019309686305501814,
+  "mean_proposal_agreement_out_of_12": {
+    "alternate_cei_first": 8.0,
+    "alternate_sigma_first": 8.3,
+    "confidence_gate_6_6": 8.1,
+    "sequential_cei_only": 12.0,
+    "sequential_sigma_only": 8.0
+  },
+  "mean_confirmation_set_jaccard_vs_alternate_cei_first": {
+    "alternate_cei_first": 1.0,
+    "alternate_sigma_first": 0.7223552917670565,
+    "confidence_gate_6_6": 0.7565634365634366,
+    "sequential_cei_only": 0.768981018981019,
+    "sequential_sigma_only": 0.8303296703296702
+  },
+  "decision_stage_counts": {
+    "initial": 1,
+    "sequential": 7,
+    "confirmation": 2
+  },
+  "comparison_with_original_batch_confirmation": {
+    "batch_mean_R_ohm": 0.3280638719447679,
+    "sequential_mean_R_ohm": 0.3291627744950838,
+    "mean_difference_ohm": 0.001098902550315911,
+    "percent_difference": 0.3349660368883654,
+    "paired_bootstrap_95pct_ci_ohm": [
+      0.0,
+      0.0032967076509477335
+    ],
+    "seed_wins": 0,
+    "seed_ties": 9,
+    "seed_losses": 1,
+    "wilcoxon_p": 0.31731050786291415
+  },
+  "interpretation": "The two proposers often choose different confirmation sets, but the final best design is identical under every sequential policy. Proposal gating therefore adds no decision value on these ten histories."
+}

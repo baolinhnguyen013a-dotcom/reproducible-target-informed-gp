@@ -1,0 +1,42 @@
+{
+  "active_acquisition": "0.5 normalized pure cEI + 0.5 normalized effective-sigma cEI",
+  "effective_sigma_weights_gp_disagreement_ntk": [
+    0.8,
+    0.1,
+    0.1
+  ],
+  "same_samples_for_both_acquisitions": true,
+  "confirmation_base_score": "p_feasible * exp(-unit(mu_R))",
+  "distance_space": "Euclidean distance in normalized 8-D design coordinates",
+  "budget": {
+    "initial": 6,
+    "sequential": 32,
+    "confirmation": 12,
+    "total": 50
+  },
+  "candidate_count_active": 1200,
+  "candidate_count_confirmation": 2400,
+  "ensemble_members": 10,
+  "epochs": 120,
+  "seeds": [
+    34261011,
+    34261012,
+    34261013,
+    34261014,
+    34261015,
+    34261016,
+    34261017,
+    34261018,
+    34261019,
+    34261020
+  ],
+  "confirmation_policies": [
+    "original_top12",
+    "soft_distance_batch_p0p10",
+    "soft_distance_batch_p0p20",
+    "soft_distance_batch",
+    "soft_distance_active_and_batch",
+    "hard_minsep_0p30",
+    "hard_minsep_0p40"
+  ]
+}

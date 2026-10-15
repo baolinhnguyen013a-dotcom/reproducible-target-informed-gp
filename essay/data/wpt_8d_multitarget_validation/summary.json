@@ -1,0 +1,62 @@
+[
+  {
+    "policy": "automated",
+    "cases": 21,
+    "qualified_cases": 21,
+    "mean_R_qualified_ohm": 0.314999939557506,
+    "mean_target_error_pct": 1.0634786076866574,
+    "mean_total_evaluations": 34.857142857142854,
+    "mean_oracle_runtime_sec": 0.044559742468187495,
+    "mean_surrogate_runtime_sec": 1.0307470238434948
+  },
+  {
+    "policy": "center_pf_cei_matched",
+    "cases": 21,
+    "qualified_cases": 21,
+    "mean_R_qualified_ohm": 0.31840191346395097,
+    "mean_target_error_pct": 1.2531703942771804,
+    "mean_total_evaluations": 34.857142857142854,
+    "mean_oracle_runtime_sec": 0.05891513543957401,
+    "mean_surrogate_runtime_sec": 0.9031388118109178
+  },
+  {
+    "policy": "conventional_cei_matched",
+    "cases": 21,
+    "qualified_cases": 21,
+    "mean_R_qualified_ohm": 0.31549202957059885,
+    "mean_target_error_pct": 1.5927665900962755,
+    "mean_total_evaluations": 34.857142857142854,
+    "mean_oracle_runtime_sec": 0.04728300012426362,
+    "mean_surrogate_runtime_sec": 0.7983458908607385
+  },
+  {
+    "policy": "sobol_matched",
+    "cases": 21,
+    "qualified_cases": 10,
+    "mean_R_qualified_ohm": 0.38511319742394257,
+    "mean_target_error_pct": 3.2842411293993843,
+    "mean_total_evaluations": 34.857142857142854,
+    "mean_oracle_runtime_sec": 0.052908913465216756,
+    "mean_surrogate_runtime_sec": 0.0
+  },
+  {
+    "policy": "forced_b50",
+    "cases": 21,
+    "qualified_cases": 21,
+    "mean_R_qualified_ohm": 0.30349575686820096,
+    "mean_target_error_pct": 1.4417926845446032,
+    "mean_total_evaluations": 50.0,
+    "mean_oracle_runtime_sec": 0.05988936889029685,
+    "mean_surrogate_runtime_sec": 1.8192415196847702
+  },
+  {
+    "policy": "conventional_cei_b50",
+    "cases": 21,
+    "qualified_cases": 21,
+    "mean_R_qualified_ohm": 0.3023471504837312,
+    "mean_target_error_pct": 1.5655888059206928,
+    "mean_total_evaluations": 50.0,
+    "mean_oracle_runtime_sec": 0.06384908018766769,
+    "mean_surrogate_runtime_sec": 1.665231323357494
+  }
+]

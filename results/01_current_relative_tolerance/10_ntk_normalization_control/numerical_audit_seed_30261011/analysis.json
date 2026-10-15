@@ -1,0 +1,112 @@
+{
+  "settings": {
+    "seeds": 1,
+    "start_seed": 30261011,
+    "output_dir": "results/01_current_relative_tolerance/10_ntk_normalization_control/numerical_audit_seed_30261011",
+    "epochs": 180,
+    "ensemble": 10,
+    "budget": 27,
+    "validations": 12,
+    "alpha": 0.5,
+    "epsilon": 0.025,
+    "methods": [
+      "uncertainty_fixed",
+      "uncertainty_dynamic",
+      "ntk_fixed",
+      "ntk_dynamic"
+    ],
+    "oracle": "reconstructed analytical oracle",
+    "source_sha256": {
+      "coil_relu_100seed_benchmark.py": "23de40cf629b03823c105dea5b0b8958af69f8db62f63af1ae4fbfee04a6cb8b",
+      "coil_first_order_active_benchmark.py": "7ff9b5b21d90d95bd69d06534fb1ea17f9502314cf35f08388e8e947e7f0b87a"
+    }
+  },
+  "means": {
+    "uncertainty_fixed": {
+      "mean_loss": 0.05289812129042495,
+      "feasible_targets": 83.0,
+      "exact_optima": 71.0,
+      "mae_L_mH": 0.9913113261244,
+      "mae_R_ohm": 0.14915533329751504,
+      "runtime_sec": 1.2203212909999999
+    },
+    "uncertainty_dynamic": {
+      "mean_loss": 0.037040941268161764,
+      "feasible_targets": 85.0,
+      "exact_optima": 71.0,
+      "mae_L_mH": 0.8422377461712061,
+      "mae_R_ohm": 0.1411990353662216,
+      "runtime_sec": 0.7743592909999997
+    },
+    "ntk_fixed": {
+      "mean_loss": 0.086898692704405,
+      "feasible_targets": 81.0,
+      "exact_optima": 73.0,
+      "mae_L_mH": 0.8808720856443766,
+      "mae_R_ohm": 0.16888196644695586,
+      "runtime_sec": 0.9000054160000004
+    },
+    "ntk_dynamic": {
+      "mean_loss": 0.0425623532385677,
+      "feasible_targets": 85.0,
+      "exact_optima": 77.0,
+      "mae_L_mH": 1.724044519508964,
+      "mae_R_ohm": 0.37772936985533256,
+      "runtime_sec": 0.8979978339999999
+    }
+  },
+  "paired_controls": [
+    {
+      "challenger": "uncertainty_dynamic",
+      "baseline": "uncertainty_fixed",
+      "mean_difference": -0.015857180022263183,
+      "median_difference": -0.015857180022263183,
+      "ci95": [
+        -0.015857180022263183,
+        -0.015857180022263183
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "challenger": "ntk_dynamic",
+      "baseline": "ntk_fixed",
+      "mean_difference": -0.04433633946583731,
+      "median_difference": -0.04433633946583731,
+      "ci95": [
+        -0.04433633946583731,
+        -0.04433633946583731
+      ],
+      "wins": 1,
+      "ties": 0,
+      "losses": 0
+    },
+    {
+      "challenger": "ntk_fixed",
+      "baseline": "uncertainty_fixed",
+      "mean_difference": 0.03400057141398006,
+      "median_difference": 0.03400057141398006,
+      "ci95": [
+        0.03400057141398006,
+        0.03400057141398006
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 1
+    },
+    {
+      "challenger": "ntk_dynamic",
+      "baseline": "uncertainty_dynamic",
+      "mean_difference": 0.005521411970405933,
+      "median_difference": 0.005521411970405933,
+      "ci95": [
+        0.005521411970405933,
+        0.005521411970405933
+      ],
+      "wins": 0,
+      "ties": 0,
+      "losses": 1
+    }
+  ]
+}

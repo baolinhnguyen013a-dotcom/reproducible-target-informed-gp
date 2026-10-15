@@ -1,0 +1,8 @@
+{
+  "initial_samples": 6,
+  "ensemble_size": 10,
+  "sigma_tolerance_mH": 0.0,
+  "maximum_true_evaluations": 16,
+  "seed": 20261016,
+  "final_validation_count": 10
+}

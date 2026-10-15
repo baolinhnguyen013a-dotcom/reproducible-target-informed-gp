@@ -1,0 +1,170 @@
+{
+  "status": "INITIALIZATION_ONLY_NO_GP_RUN",
+  "source_pdf": "coil_surrogate_ieee_draft(9).pdf",
+  "sample_design": "1000 consecutive seeded 6-point uniform samples without replacement over 1110 integer designs, same six points tested for every target",
+  "seed_range_inclusive": [
+    20261025,
+    20262024
+  ],
+  "number_seeds": 1000,
+  "targets_mH": [
+    1,
+    87
+  ],
+  "screened_seed_target_pairs": 87000,
+  "overall_feasible_seed_target_pairs": 4798,
+  "overall_initial_feasibility_fraction": 0.05514942528735632,
+  "zero_feasible_targets_seeds": 13,
+  "selected_extreme_seed": 20261105,
+  "selected_extreme_target_mH": 2,
+  "extreme_designs": [
+    {
+      "T": 10,
+      "n": 50,
+      "inductance_mH": 23.217084327034794
+    },
+    {
+      "T": 10,
+      "n": 84,
+      "inductance_mH": 49.12091758240852
+    },
+    {
+      "T": 8,
+      "n": 86,
+      "inductance_mH": 32.091138611598545
+    },
+    {
+      "T": 8,
+      "n": 122,
+      "inductance_mH": 50.97771538680671
+    },
+    {
+      "T": 6,
+      "n": 115,
+      "inductance_mH": 26.14999146421104
+    },
+    {
+      "T": 10,
+      "n": 64,
+      "inductance_mH": 33.439754481053214
+    }
+  ],
+  "extreme_min_L_mH": 23.217084327034794,
+  "extreme_max_L_mH": 50.97771538680671,
+  "extreme_min_relative_error": 10.608542163517397,
+  "selected_targets": [
+    {
+      "target_mH": 1,
+      "feasible_lattice_designs": 4,
+      "exact_p_initial_feasible": 0.021475749534514033,
+      "empirical_initial_feasible_count": 20,
+      "empirical_initial_feasible_rate": 0.02,
+      "wilson_95_lower": 0.012983682916415136,
+      "wilson_95_upper": 0.030690005229717786,
+      "median_min_relative_L_error": 0.519321531715552,
+      "p95_min_relative_L_error": 4.335914351954975,
+      "p99_min_relative_L_error": 8.68230887012042,
+      "max_min_relative_L_error": 22.217084327034797,
+      "seed_of_max_error": 20261105
+    },
+    {
+      "target_mH": 2,
+      "feasible_lattice_designs": 7,
+      "exact_p_initial_feasible": 0.037329125624249504,
+      "empirical_initial_feasible_count": 34,
+      "empirical_initial_feasible_rate": 0.034,
+      "wilson_95_lower": 0.024431348663226313,
+      "wilson_95_upper": 0.04713519024531107,
+      "median_min_relative_L_error": 0.4064580557387369,
+      "p95_min_relative_L_error": 1.6679571759774876,
+      "p99_min_relative_L_error": 3.8411544350602096,
+      "max_min_relative_L_error": 10.608542163517397,
+      "seed_of_max_error": 20261105
+    },
+    {
+      "target_mH": 3,
+      "feasible_lattice_designs": 13,
+      "exact_p_initial_feasible": 0.06839435377671932,
+      "empirical_initial_feasible_count": 65,
+      "empirical_initial_feasible_rate": 0.065,
+      "wilson_95_lower": 0.051323770569062045,
+      "wilson_95_upper": 0.0820055093133709,
+      "median_min_relative_L_error": 0.3254280806088349,
+      "p95_min_relative_L_error": 0.947242478290031,
+      "p99_min_relative_L_error": 2.227436290040139,
+      "max_min_relative_L_error": 6.739028109011598,
+      "seed_of_max_error": 20261105
+    },
+    {
+      "target_mH": 4,
+      "feasible_lattice_designs": 8,
+      "exact_p_initial_feasible": 0.042565775892839386,
+      "empirical_initial_feasible_count": 32,
+      "empirical_initial_feasible_rate": 0.032,
+      "wilson_95_lower": 0.022757107858710962,
+      "wilson_95_upper": 0.04482473808376865,
+      "median_min_relative_L_error": 0.3150965606269595,
+      "p95_min_relative_L_error": 0.8577454204072373,
+      "p99_min_relative_L_error": 1.4205772175301046,
+      "max_min_relative_L_error": 4.804271081758698,
+      "seed_of_max_error": 20261105
+    },
+    {
+      "target_mH": 5,
+      "feasible_lattice_designs": 12,
+      "exact_p_initial_feasible": 0.06327564143483311,
+      "empirical_initial_feasible_count": 72,
+      "empirical_initial_feasible_rate": 0.072,
+      "wilson_95_lower": 0.05756392168091441,
+      "wilson_95_upper": 0.08971178358272076,
+      "median_min_relative_L_error": 0.2902897894413186,
+      "p95_min_relative_L_error": 0.8574811722926339,
+      "p99_min_relative_L_error": 0.982283851397495,
+      "max_min_relative_L_error": 3.643416865406959,
+      "seed_of_max_error": 20261105
+    },
+    {
+      "target_mH": 20,
+      "feasible_lattice_designs": 17,
+      "exact_p_initial_feasible": 0.08863674842723446,
+      "empirical_initial_feasible_count": 87,
+      "empirical_initial_feasible_rate": 0.087,
+      "wilson_95_lower": 0.071074421452375,
+      "wilson_95_upper": 0.10608648105669352,
+      "median_min_relative_L_error": 0.2010550322423919,
+      "p95_min_relative_L_error": 0.6665424186575548,
+      "p99_min_relative_L_error": 0.8355314746223033,
+      "max_min_relative_L_error": 0.9890371798427214,
+      "seed_of_max_error": 20261282
+    },
+    {
+      "target_mH": 47,
+      "feasible_lattice_designs": 11,
+      "exact_p_initial_feasible": 0.058133513208491916,
+      "empirical_initial_feasible_count": 67,
+      "empirical_initial_feasible_rate": 0.067,
+      "wilson_95_lower": 0.053101919606623846,
+      "wilson_95_upper": 0.08421205324186688,
+      "median_min_relative_L_error": 0.25232283136619615,
+      "p95_min_relative_L_error": 0.7188476881793006,
+      "p99_min_relative_L_error": 0.8513655223850012,
+      "max_min_relative_L_error": 0.950549104218544,
+      "seed_of_max_error": 20261088
+    },
+    {
+      "target_mH": 87,
+      "feasible_lattice_designs": 4,
+      "exact_p_initial_feasible": 0.021475749534514033,
+      "empirical_initial_feasible_count": 22,
+      "empirical_initial_feasible_rate": 0.022,
+      "wilson_95_lower": 0.014572707764791058,
+      "wilson_95_upper": 0.03308567334739963,
+      "median_min_relative_L_error": 0.5003316909516395,
+      "p95_min_relative_L_error": 0.842440077363046,
+      "p99_min_relative_L_error": 0.9184311117345122,
+      "max_min_relative_L_error": 0.9732851482559952,
+      "seed_of_max_error": 20261088
+    }
+  ],
+  "critical_limit": "No fitted Gaussian process, acquisition loop, complete optimization trajectories, stopping, or confirmations were evaluated. A bad start is not proof of bad final optimization."
+}

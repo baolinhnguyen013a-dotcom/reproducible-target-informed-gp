@@ -1,0 +1,25 @@
+{
+  "center_start": {
+    "cases": 870,
+    "qualification_rate": 0.5287356321839081,
+    "exact_optimum_cases": 460,
+    "exact_optimum_rate": 0.5287356321839081,
+    "all_case_mean_u": 0.47126436781609193,
+    "targetwise_trimmed_mean_u": 0.47126436781609193,
+    "worst_seed_mean_u": 0.47126436781609193,
+    "worst_seed": 20261015,
+    "median_first_feasible_evaluation": 6.0,
+    "maximum_first_feasible_evaluation": 11
+  },
+  "paired_vs_random_six_baseline": {
+    "paired_mean_difference_u": 0.4707965596021979,
+    "target_cluster_bootstrap_95pct_ci": [
+      0.367190085746379,
+      0.5744504332078268
+    ],
+    "paired_case_wins": 10,
+    "paired_case_ties": 450,
+    "paired_case_losses": 410,
+    "wilcoxon_p": 4.7533214419669066e-91
+  }
+}

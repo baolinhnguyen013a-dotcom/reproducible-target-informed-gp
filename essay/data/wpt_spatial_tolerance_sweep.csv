@@ -1,0 +1,15 @@
+perturbation_type,parameter_name,value,unit,mutual_inductance_nH,relative_deviation_pct
+lateral,r_lat,0,mm,1257.19,+0.00
+lateral,r_lat,5,mm,1251.29,-0.47
+lateral,r_lat,10,mm,1233.75,-1.86
+lateral,r_lat,15,mm,1205.07,-4.15
+lateral,r_lat,20,mm,1166.03,-7.25
+axial,gap_z,60,mm,1621.58,+28.98
+axial,gap_z,65,mm,1425.13,+13.36
+axial,gap_z,70,mm,1257.19,+0.00
+axial,gap_z,75,mm,1112.99,-11.47
+axial,gap_z,80,mm,988.66,-21.36
+angular,phi_roll,0,deg,1257.19,+0.00
+angular,phi_roll,5,deg,1258.86,+0.13
+angular,phi_roll,10,deg,1263.77,+0.52
+angular,phi_roll,15,deg,1271.60,+1.15

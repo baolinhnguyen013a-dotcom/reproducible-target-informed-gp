@@ -1,0 +1,28 @@
+{
+  "title": "Reproducible Target-Informed Gaussian-Process Optimization for Data-Efficient Electromagnetic Design",
+  "description": "Code, configurations, row-level evidence, and executable audits for a reproducible low-budget constrained Gaussian-process optimization workflow and its electromagnetic-design application checks.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Dong, Le",
+      "affiliation": "Xi'an Jiaotong University"
+    }
+  ],
+  "keywords": [
+    "Bayesian optimization",
+    "Gaussian process",
+    "constrained expected improvement",
+    "electromagnetic design",
+    "wireless power transfer",
+    "reproducibility"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/baolinhnguyen013a-dotcom/reproducible-target-informed-gp",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

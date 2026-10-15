@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software or evidence package, please cite the accompanying paper."
+title: "Reproducible Target-Informed Gaussian-Process Optimization for Data-Efficient Electromagnetic Design"
+type: software
+authors:
+  - family-names: Dong
+    given-names: Le
+    alias: Addy Tong Lok
+    affiliation: "Xi'an Jiaotong University"
+    email: leroi_2024@stu.xjtu.edu.cn
+version: 1.0.0
+date-released: 2026-10-16
+repository-code: "https://github.com/baolinhnguyen013a-dotcom/reproducible-target-informed-gp"
+license: MIT
+keywords:
+  - Bayesian optimization
+  - Gaussian process
+  - constrained expected improvement
+  - electromagnetic design
+  - wireless power transfer

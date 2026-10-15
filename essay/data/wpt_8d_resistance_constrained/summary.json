@@ -1,0 +1,77 @@
+[
+  {
+    "policy": "cei",
+    "weights": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_best_M_nH": 1824.9461447479202,
+    "std_best_M_nH": 165.30639290759527,
+    "mean_R_ohm": 0.3405957039969082,
+    "mean_runtime_sec": 7.528152962700001
+  },
+  {
+    "policy": "cei_gp",
+    "weights": [
+      0.8,
+      0.2,
+      0.0,
+      0.0
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_best_M_nH": 1787.6232812278315,
+    "std_best_M_nH": 116.75718966096487,
+    "mean_R_ohm": 0.3355238754872397,
+    "mean_runtime_sec": 6.515766053999999
+  },
+  {
+    "policy": "cei_neural",
+    "weights": [
+      0.8,
+      0.0,
+      0.1,
+      0.1
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_best_M_nH": 1597.1498597523112,
+    "std_best_M_nH": 206.4559077850272,
+    "mean_R_ohm": 0.32791243011838556,
+    "mean_runtime_sec": 36.89804341650001
+  },
+  {
+    "policy": "cei_all",
+    "weights": [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_best_M_nH": 1616.3699042039852,
+    "std_best_M_nH": 260.5031194093108,
+    "mean_R_ohm": 0.33043241044228033,
+    "mean_runtime_sec": 33.3559479958
+  },
+  {
+    "policy": "cei_all05",
+    "weights": [
+      0.85,
+      0.05,
+      0.05,
+      0.05
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_best_M_nH": 1735.5037955303928,
+    "std_best_M_nH": 205.32741992458907,
+    "mean_R_ohm": 0.3371318677870855,
+    "mean_runtime_sec": 28.777886962399997
+  }
+]

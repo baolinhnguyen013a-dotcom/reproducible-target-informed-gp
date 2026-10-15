@@ -1,0 +1,16 @@
+[
+  {
+    "policy": "sigma_gp_only",
+    "sigma_weights_gp_disagreement_ntk": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "cases": 10,
+    "qualification_rate": 1.0,
+    "mean_R_qualified_ohm": 0.3280638719447679,
+    "std_R_qualified_ohm": 0.018570834930899446,
+    "mean_target_error_pct": 1.3961868783089282,
+    "mean_runtime_sec": 9.102485204299999
+  }
+]

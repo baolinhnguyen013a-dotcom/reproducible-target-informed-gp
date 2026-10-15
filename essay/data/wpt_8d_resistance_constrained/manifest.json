@@ -1,0 +1,72 @@
+{
+  "task": "maximize mutual inductance subject to a fixed resistance cap",
+  "source_model": "Asadi and Abazari (2025), doi:10.1049/elp2.70015",
+  "dimensions": 8,
+  "fixed_pose": {
+    "translation_mm": [
+      0.0,
+      0.0,
+      70.0
+    ],
+    "rotation_rad": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "resistance_cap_ohm": 0.35,
+  "budget": {
+    "initial": 6,
+    "sequential": 32,
+    "confirmation": 12,
+    "total": 50
+  },
+  "same_samples_within_trajectory": true,
+  "candidate_count": 1200,
+  "ensemble_members": 10,
+  "epochs": 120,
+  "seeds": [
+    36261011,
+    36261012,
+    36261013,
+    36261014,
+    36261015,
+    36261016,
+    36261017,
+    36261018,
+    36261019,
+    36261020
+  ],
+  "policies": {
+    "cei": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cei_gp": [
+      0.8,
+      0.2,
+      0.0,
+      0.0
+    ],
+    "cei_neural": [
+      0.8,
+      0.0,
+      0.1,
+      0.1
+    ],
+    "cei_all": [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "cei_all05": [
+      0.85,
+      0.05,
+      0.05,
+      0.05
+    ]
+  }
+}

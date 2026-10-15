@@ -1,0 +1,52 @@
+{
+  "study": "GP-cEI Budget Scaling and Allocation Strategy",
+  "benchmark": "1110 configurations, 87 targets (1-87 mH), 10 seeds (20261015-20261024), 870 cases per setup",
+  "findings": {
+    "key_takeaway": "Reallocating budget from passive post-hoc validation to active sequential queries accelerates convergence, achieving 100% exact optimum recovery at B=24 and 99.77% at B=21.",
+    "baseline_B27": {
+      "budget": 27,
+      "split": [6, 9, 12],
+      "exact_optima": 860,
+      "exact_rate": 0.9885,
+      "mean_loss": 0.000415,
+      "trimmed_loss": 0.000151,
+      "worst_seed_loss": 0.002487
+    },
+    "active_boosted_B24": {
+      "budget": 24,
+      "split": [6, 14, 4],
+      "exact_optima": 870,
+      "exact_rate": 1.0000,
+      "mean_loss": 0.000000,
+      "trimmed_loss": 0.000000,
+      "worst_seed_loss": 0.000000
+    },
+    "active_boosted_B21": {
+      "budget": 21,
+      "split": [6, 12, 3],
+      "exact_optima": 868,
+      "exact_rate": 0.9977,
+      "mean_loss": 0.000057,
+      "trimmed_loss": 0.000000,
+      "worst_seed_loss": 0.000567
+    },
+    "active_boosted_B20": {
+      "budget": 20,
+      "split": [6, 11, 3],
+      "exact_optima": 864,
+      "exact_rate": 0.9931,
+      "mean_loss": 0.000212,
+      "trimmed_loss": 0.000071,
+      "worst_seed_loss": 0.001099
+    },
+    "active_boosted_B18": {
+      "budget": 18,
+      "split": [6, 10, 2],
+      "exact_optima": 860,
+      "exact_rate": 0.9885,
+      "mean_loss": 0.000332,
+      "trimmed_loss": 0.000180,
+      "worst_seed_loss": 0.001422
+    }
+  }
+}

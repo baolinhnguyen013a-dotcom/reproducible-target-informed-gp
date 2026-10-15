@@ -1,0 +1,43 @@
+{
+  "method": "replace GP sigma in PoF and EI with a quantile-calibrated convex mixture",
+  "sigma_components": [
+    "GP posterior standard deviation",
+    "neural ensemble disagreement",
+    "NTK posterior standard deviation"
+  ],
+  "calibration": "stable empirical quantile mapping to the corresponding GP-sigma distribution",
+  "gp_predictive_means_retained": true,
+  "same_samples_within_trajectory": true,
+  "confirmation": "12-point GP-only terminal confirmation",
+  "dimensions": 8,
+  "target_M_nH": 1500.0,
+  "relative_tolerance": 0.025,
+  "budget": {
+    "initial": 6,
+    "sequential": 32,
+    "confirmation": 12,
+    "total": 50
+  },
+  "candidate_count": 1200,
+  "ensemble_members": 10,
+  "epochs": 120,
+  "seeds": [
+    34261011,
+    34261012,
+    34261013,
+    34261014,
+    34261015,
+    34261016,
+    34261017,
+    34261018,
+    34261019,
+    34261020
+  ],
+  "policies": {
+    "sigma_gp_only": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  }
+}

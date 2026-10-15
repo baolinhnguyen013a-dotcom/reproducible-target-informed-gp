@@ -1,0 +1,13 @@
+config,budget,n_init,n_active,n_val,cover_weight,total_cases,qualification_rate,exact_count,exact_rate,all_case_mean_loss,trimmed_mean_loss,worst_seed_mean_loss,worst_seed
+Paper Baseline: Pure cEI (B=27),27,6,9,12,0.0,870,1.0000,860,0.9885,0.000415,0.000151,0.002487,20261017
+Paper Hybrid: 75% cEI + 25% Cov (B=27),27,6,9,12,0.25,870,1.0000,863,0.9920,0.000402,0.000135,0.002487,20261017
+Active-Boosted: B=24 (init=6 active=14 val=4 pure cEI),24,6,14,4,0.0,870,1.0000,870,1.0000,0.000000,0.000000,0.000000,20261015
+Active-Boosted: B=24 (init=6 active=14 val=4 hybrid cov=0.25),24,6,14,4,0.25,870,1.0000,870,1.0000,0.000000,0.000000,0.000000,20261015
+Active-Boosted: B=21 (init=6 active=12 val=3 pure cEI),21,6,12,3,0.0,870,1.0000,868,0.9977,0.000057,0.000000,0.000567,20261017
+Active-Boosted: B=21 (init=6 active=12 val=3 hybrid cov=0.25),21,6,12,3,0.25,870,1.0000,868,0.9977,0.000057,0.000000,0.000567,20261017
+Active-Boosted: B=20 (init=6 active=11 val=3 pure cEI),20,6,11,3,0.0,870,1.0000,864,0.9931,0.000212,0.000071,0.001099,20261017
+Active-Boosted: B=18 (init=6 active=10 val=2 pure cEI),18,6,10,2,0.0,870,1.0000,860,0.9885,0.000332,0.000180,0.001422,20261017
+Reduced Val: B=24 (init=6 active=9 val=9),24,6,9,9,0.0,870,1.0000,860,0.9885,0.000415,0.000151,0.002487,20261017
+Reduced Val: B=21 (init=6 active=9 val=6),21,6,9,6,0.0,870,1.0000,859,0.9874,0.000498,0.000192,0.002511,20261017
+Reduced Val: B=18 (init=6 active=9 val=3),18,6,9,3,0.0,870,1.0000,855,0.9828,0.000721,0.000315,0.003140,20261017
+Zero Val: B=15 (init=6 active=9 val=0),15,6,9,0,0.0,870,1.0000,846,0.9724,0.001432,0.000834,0.005075,20261017

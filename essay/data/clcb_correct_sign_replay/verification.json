@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "implementation": {
+    "lower_bound": "mean_R - kappa*std_R",
+    "kappa": 2.0,
+    "maximized_acquisition": "p_feasible*exp(-unit_scale(lower_bound))",
+    "source": "/Users/saishangjiangnandong/Desktop/algorithm_discussion/methods/whole_range_surrogate_models/target_conditioned_gp.py",
+    "source_sha256": "962991eea4a8ff683135b2de917f34fca81f30808b29ee72d84d5683a408a744"
+  },
+  "fresh_replay_summary": {
+    "cases": 870,
+    "qualification_rate": 1.0,
+    "exact_optimum_cases": 789,
+    "exact_optimum_rate": 0.906896551724138,
+    "all_case_mean_u": 0.005815926708405649,
+    "targetwise_trimmed_mean_u": 0.0037163011328341885,
+    "worst_seed_mean_u": 0.015325221320810493,
+    "worst_seed": 20261023
+  },
+  "reference_rows": 870,
+  "fresh_rows": 870,
+  "mismatch_count": 0,
+  "mismatches": []
+}
