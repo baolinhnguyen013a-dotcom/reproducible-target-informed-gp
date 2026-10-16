@@ -18,7 +18,7 @@ from scipy.special import ndtr
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-import run_center_start_cei_lr as base  # noqa: E402
+import run_center_start_control as base  # noqa: E402
 import run_center_cosine_stopping_smoke as stopping  # noqa: E402
 
 SEED = 20261105

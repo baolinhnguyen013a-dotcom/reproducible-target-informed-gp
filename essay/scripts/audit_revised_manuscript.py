@@ -474,7 +474,7 @@ def audit_clcb_replay():
     folder = ESSAY/"data/clcb_correct_sign_replay"
     report = json.loads((folder/"verification.json").read_text())
     data = rows(folder/"results.csv")
-    source = ROOT/"methods/target_informed_gp/gp_acquisition_policies.py"
+    source = ROOT/"methods/target_informed_gp/gp_conventional_acquisition_baselines.py"
     assert report["status"] == "complete"
     assert report["mismatch_count"] == 0
     assert len(data) == report["fresh_rows"] == report["reference_rows"] == 870
@@ -518,13 +518,13 @@ def audit_assets():
         ESSAY/"scripts/run_wpt_8d_mixed_benchmark.py",
         ESSAY/"scripts/run_wpt_8d_resistance_constrained.py",
         ESSAY/"scripts/run_wpt_8d_budget_sweep.py",
-        ESSAY/"scripts/run_center_start_cei_lr.py",
+        ESSAY/"scripts/run_center_start_control.py",
         ESSAY/"scripts/run_center_feasibility_smoke.py",
         ESSAY/"scripts/run_center_feasibility_low_targets.py",
         ESSAY/"scripts/run_center_cosine_stopping_smoke.py",
-        ESSAY/"scripts/run_wpt_8d_automated_cei.py",
+        ESSAY/"scripts/run_automatic_gp_wpt8d.py",
         ESSAY/"scripts/run_wpt_8d_multitarget_validation.py",
-        ESSAY/"scripts/run_center_stopping_heldout.py",
+        ESSAY/"scripts/run_automatic_gp_2d.py",
         ESSAY/"scripts/analyze_stopping_gp_calibration.py",
         ESSAY/"scripts/analyze_confirmation_ablation.py",
         ESSAY/"scripts/seed_initialization_screen.py",

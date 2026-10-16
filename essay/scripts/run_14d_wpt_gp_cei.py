@@ -7,9 +7,7 @@ Evaluates GP-cEI vs Random Search across 10 random seeds on the 14D Table 2 engi
 - Objective: Minimize total copper resistance R_total (Pouillet's Law)
 """
 
-import sys
 import time
-from pathlib import Path
 import json
 import numpy as np
 from scipy.special import ndtr
@@ -23,12 +21,10 @@ from sklearn.exceptions import ConvergenceWarning
 warnings.simplefilter('ignore', RuntimeWarning)
 warnings.simplefilter('ignore', ConvergenceWarning)
 
-# Dynamic import of mutual_inductance_simulator
-SIM_DIR = Path(__file__).resolve().parent.parent.parent / "mutual_inductance_simulator"
-if str(SIM_DIR) not in sys.path:
-    sys.path.insert(0, str(SIM_DIR))
-
-from core import PlanarPolygonCoil, PartialMutualInductanceCalculator
+from wpt_partial_inductance_oracle import (
+    PartialMutualInductanceCalculator,
+    PlanarPolygonCoil,
+)
 
 RHO_CU = 1.851e-5  # Ohm * mm
 WIRE_D = 0.68      # mm

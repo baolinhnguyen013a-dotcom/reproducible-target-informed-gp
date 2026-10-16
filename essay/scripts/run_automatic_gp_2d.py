@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Evaluate the frozen deterministic stopping rule on held-out 2-D targets."""
+"""Run the proposed automatic GP workflow on held-out 2-D coil targets.
+
+This is the frozen paper method: deterministic center initialization, 75/25
+feasibility/uncertainty discovery, ordinary cEI after feasibility,
+deterministic GP fitting, the evidence guard, adaptive stopping, and final
+confirmation accounting.
+"""
 from __future__ import annotations
 
 import csv
@@ -9,7 +15,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import numpy as np
 
 import run_center_cosine_stopping_smoke as stopping
-import run_center_start_cei_lr as base
+import run_center_start_control as base
 
 
 DEVELOPMENT_TARGETS = set(stopping.TARGETS)

@@ -49,14 +49,22 @@ ledgers. It does not require Ansys.
 
 - `methods/surrogate_selection/`: target-independent GP and neural-surrogate
   comparisons from the first experimental stage.
-- `methods/target_informed_gp/`: cEI/cLCB/IVR acquisition policies from the
-  second stage, plus one clearly marked historical reference.
+- `methods/target_informed_gp/`: the conventional cEI/cLCB/IVR acquisition
+  comparison from the second stage, explicitly separated from the proposed
+  automatic workflow.
 - `methods/direct_search_baselines/`: self-contained exhaustive, SA, GA, and
   PSO comparison scripts; no shared optimizer engine is required.
 - `experiments/`: two-dimensional benchmark runners.
 - `config/`: shared physical and optimizer configurations.
 - `results/coil_2d_relative_tolerance/`: retained benchmark outputs.
-- `essay/scripts/`: WPT, stopping, analysis, rendering, and audit programs.
+- `essay/scripts/run_automatic_gp_2d.py`: proposed automatic workflow on the
+  held-out 2-D coil targets.
+- `essay/scripts/run_automatic_gp_wpt8d.py`: proposed automatic workflow on
+  the 8-D WPT benchmark.
+- `essay/scripts/wpt_partial_inductance_oracle.py`: self-contained numerical
+  WPT oracle used by the 8-D runners; it replaces the former omitted generic
+  `core.py` dependency.
+- `essay/scripts/`: remaining controls, analyses, renderers, and audits.
 - `essay/data/`: row-level evidence and machine-readable summaries.
 - `essay/data/aedt_wpt_1000_matched/`: complete Maxwell run archives.
 - `essay/evidence_manifest.md`: claim-to-code-to-data map.

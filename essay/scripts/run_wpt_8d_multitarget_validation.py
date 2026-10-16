@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 from scipy.special import ndtr
 
-import run_wpt_8d_automated_cei as auto
+import run_automatic_gp_wpt8d as auto
 
 # Frozen dense transfer screen.  The original five targets remain the
 # representative rows used in the manuscript table; every 50-nH target is

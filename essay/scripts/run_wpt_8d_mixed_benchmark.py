@@ -11,7 +11,6 @@ import argparse
 import csv
 import json
 import math
-import sys
 import time
 import warnings
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -24,10 +23,12 @@ from sklearn.exceptions import ConvergenceWarning
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import ConstantKernel, Matern, WhiteKernel
 
+from wpt_partial_inductance_oracle import (
+    PartialMutualInductanceCalculator,
+    PlanarPolygonCoil,
+)
+
 PROJECT = Path(__file__).resolve().parents[2]
-SIM_DIR = PROJECT / "mutual_inductance_simulator"
-sys.path.insert(0, str(SIM_DIR))
-from core import PartialMutualInductanceCalculator, PlanarPolygonCoil
 
 TARGET_M = 1500.0
 EPSILON = 0.025

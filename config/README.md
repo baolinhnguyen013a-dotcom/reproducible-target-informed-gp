@@ -16,7 +16,7 @@ The other files in `surrogates/` configure the standalone active-learning method
 | `surrogates/gaussian_process.json` | `surrogate_selection/gp_single_response.py` | 6 | 10 (16 total) | 10 |
 | `surrogates/deep_ensemble.json` | `surrogate_selection/nn_deep_ensemble.py` | 6 | 10 (16 total) | 10 |
 | `surrogates/mc_dropout_bnn.json` | `surrogate_selection/nn_mc_dropout.py` | 6 | 10 | 10 |
-| `surrogates/target_conditioned_gp.json` | `target_informed_gp/gp_acquisition_policies.py` | 6 | 9 (15 total) | 12 |
+| `surrogates/target_conditioned_gp.json` | `target_informed_gp/gp_conventional_acquisition_baselines.py` | 6 | 9 (15 total) | 12 |
 | `surrogates/global_dual_gp.json` | `surrogate_selection/gp_dual_response.py` | 6 | 9 (15 total) | 12 |
 
 `maximum_true_evaluations` includes the initial samples, but excludes final
@@ -29,10 +29,8 @@ networks, while `mc_dropout_samples` controls stochastic prediction passes.
 mixed local/global GP implementation. Its `tcfei` mode is an archived research
 prototype and is not the proposed method in the current paper. The tested
 representatives are conventional GP-cEI, probability-weighted GP-cLCB, and
-weighted GP-IVR. The older
-`methods/target_informed_gp/gp_cei_legacy_budget80.py` belongs to this same
-surrogate-based-optimizer category, but retains a legacy 16-initial/80-total
-protocol and is therefore not substituted into the matched B=27 comparison.
+weighted GP-IVR. The obsolete 16-initial/80-total development implementation
+is retained only in Git history and is not part of the maintained comparison.
 
 The same target-conditioned script also implements the standard paper baselines
 `cei`, `clcb`, and `ivr`. For these modes, `local_weight` and `global_weight`

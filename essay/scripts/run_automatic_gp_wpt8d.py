@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic, automatically stopped cEI for the nominal 8-D WPT task.
+"""Run the proposed automatic GP workflow on the nominal 8-D WPT task.
 
 Protocol: one geometric center; 75/25 feasibility/inductance-uncertainty
 discovery until the first feasible observation; ordinary cEI thereafter;
@@ -23,7 +23,7 @@ from sklearn.exceptions import ConvergenceWarning
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import ConstantKernel, Matern, WhiteKernel
 
-from run_center_start_cei_lr import deterministic_multistart
+from run_center_start_control import deterministic_multistart
 from run_wpt_8d_mixed_benchmark import (
     EPSILON, HIGH, LOW, LOWER_M, TARGET_M, UPPER_M, evaluate, normalize, unit,
 )

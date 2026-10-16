@@ -18,7 +18,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 import numpy as np
 from scipy.special import ndtr
 
-import run_center_start_cei_lr as base
+import run_center_start_control as base
 
 TARGETS = (1, 2, 3, 4, 5, 11, 20, 30, 39, 49, 58, 68, 77, 87)
 POLICIES = ("ordinary_stop", "cosine_xi_stop")

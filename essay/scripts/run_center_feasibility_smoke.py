@@ -8,7 +8,7 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import numpy as np
 
-import run_center_start_cei_lr as base
+import run_center_start_control as base
 
 TARGETS = (1, 11, 20, 30, 39, 49, 58, 68, 77, 87)
 WEIGHTS = (0.25, 0.50, 0.75)

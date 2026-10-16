@@ -8,7 +8,7 @@ authors:
     alias: Addy Tong Lok
     affiliation: "Xi'an Jiaotong University"
     email: leroi_2024@stu.xjtu.edu.cn
-version: 1.3.0
+version: 1.4.0
 date-released: 2026-10-16
 repository-code: "https://github.com/baolinhnguyen013a-dotcom/reproducible-target-informed-gp"
 license: MIT
