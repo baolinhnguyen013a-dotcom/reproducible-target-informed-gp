@@ -27,7 +27,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-from wpt_partial_inductance_oracle import (
+from wpt_partial_inductance_model import (
     PartialMutualInductanceCalculator,
     PlanarPolygonCoil,
 )

@@ -21,7 +21,7 @@ from sklearn.exceptions import ConvergenceWarning
 warnings.simplefilter('ignore', RuntimeWarning)
 warnings.simplefilter('ignore', ConvergenceWarning)
 
-from wpt_partial_inductance_oracle import (
+from wpt_partial_inductance_model import (
     PartialMutualInductanceCalculator,
     PlanarPolygonCoil,
 )

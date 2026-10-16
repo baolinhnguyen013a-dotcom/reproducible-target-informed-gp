@@ -7,6 +7,7 @@ from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.lines import Line2D
 
 ROOT = Path(__file__).resolve().parents[2]
 WIRE_WIDTH = .68
@@ -35,9 +36,17 @@ def main():
     draw(ax, round(ns_r), round(nt_r), s_r, ri_r, 70, "#1b9e77")
     ax.plot([0, 0], [0, 0], [0, 70], color="0.35", ls="--", lw=1)
     ax.text(3, 3, 35, "$70$ mm", fontsize=7)
-    ax.text(-72, -72, 0, "Tx: 9 sides, 7 turns", color="#d95f02", fontsize=7)
-    ax.text(-72, -72, 70, "Rx: 7 sides, 7 turns", color="#1b9e77", fontsize=7)
     ax.set(xlabel="$x$ (mm)", ylabel="$y$ (mm)", zlabel="$z$ (mm)")
+    ax.set_xticks([-60, 0, 60])
+    ax.set_yticks([-60, 0, 60])
+    ax.set_zticks([0, 70])
+    ax.legend(handles=[
+        Line2D([0], [0], color="#d95f02", lw=1.4,
+               label="Tx: 9 sides, 7 turns"),
+        Line2D([0], [0], color="#1b9e77", lw=1.4,
+               label="Rx: 7 sides, 7 turns"),
+    ], loc="upper left", frameon=True, facecolor="white", edgecolor="0.8",
+       fontsize=6.3, borderpad=.3, handlelength=1.5)
     ax.set_box_aspect((1, 1, .62))
     ax.view_init(elev=23, azim=-58)
     ax.grid(False)

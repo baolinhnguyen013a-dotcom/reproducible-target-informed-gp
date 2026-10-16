@@ -52,15 +52,15 @@ def main():
     axes[0].set_xticks(x, [item[0] for item in summaries])
     axes[0].tick_params(axis="x", labelsize=6.5)
     axes[0].set_ylabel("Mean physical evaluations")
-    axes[0].set_ylim(0, 30)
+    axes[0].set_ylim(0, 32)
     axes[0].set_title("(a) Two-dimensional stopping screen")
     axes[0].text(1.97, 27.45, "fixed $B=27$", ha="right", va="bottom",
                  fontsize=6.2,
                  bbox={"facecolor": "white", "edgecolor": "none", "pad": .35})
     for bar, value, accuracy in zip(bars, calls, exact):
-        axes[0].text(bar.get_x()+bar.get_width()/2, value-.55,
-                     f"{value:.2f}\n{accuracy:.0f}%", ha="center", va="top",
-                     fontsize=6.2, color="white", fontweight="bold")
+        axes[0].text(bar.get_x()+bar.get_width()/2, value+.35,
+                     f"{value:.2f} / {accuracy:.0f}%", ha="center", va="bottom",
+                     fontsize=5.8, color="black")
 
     ax = axes[1]
     ax.axhspan(1462.5, 1537.5, color="#a6d854", alpha=.25, label="feasible $M$ band")
@@ -68,11 +68,10 @@ def main():
     ax.scatter(model_call[feasible], mutual[feasible], s=25, color="#1b9e77", label="feasible call", zorder=3)
     ax.axvline(34.5, color="#d95f02", ls="--", lw=1.1, label="stop after call 34")
     ax.set(xlabel="Model-building evaluation", ylabel="Mutual inductance (nH)")
-    ax.set_title("(b) 8-D WPT trajectory", pad=28)
+    ax.set_title("(b) 8-D WPT trajectory")
     ax.set_xlim(.3, 40.5)
-    ax.legend(frameon=False, fontsize=5.8, loc="lower center",
-              bbox_to_anchor=(.5, 1.005), ncol=2, columnspacing=.8,
-              handletextpad=.35, borderaxespad=0)
+    ax.legend(frameon=True, facecolor="white", edgecolor="0.8", fontsize=5.4,
+              loc="upper right", ncol=1, handletextpad=.35, borderpad=.25)
 
     ax = axes[2]
     ax.plot(rho_x, 100*np.asarray(rho), color="#7570b3", marker="o",
@@ -80,13 +79,13 @@ def main():
     ax.axhline(1, color="#d95f02", ls="--", lw=1.1, label="1% threshold")
     ax.axvspan(32, 34.25, color="#a6d854", alpha=.24,
                label="three refits")
-    ax.set_yscale("log")
     ax.set(xlabel="Observations at refit", ylabel="Maximum relative cEI (%)")
-    ax.set_title("(c) Stopping evidence", pad=28)
+    ax.set_title("(c) Stopping evidence")
     ax.set_xlim(10.5, 35)
-    ax.legend(frameon=False, fontsize=5.8, loc="lower center",
-              bbox_to_anchor=(.5, 1.005), ncol=2, columnspacing=.7,
-              handletextpad=.3, borderaxespad=0)
+    ax.set_ylim(.5, 3.05)
+    ax.set_yticks([1, 2, 3])
+    ax.legend(frameon=True, facecolor="white", edgecolor="0.8", fontsize=5.4,
+              loc="upper right", ncol=1, handletextpad=.3, borderpad=.25)
     for suffix in ("pdf", "png", "svg"):
         fig.savefig(FIG.with_suffix("."+suffix), dpi=300)
 

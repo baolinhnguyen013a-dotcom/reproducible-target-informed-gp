@@ -1,6 +1,6 @@
 {
   "title": "Reproducible Target-Informed Gaussian-Process Optimization for Data-Efficient Electromagnetic Design",
-  "description": "Code, configurations, row-level evidence, and executable audits for a reproducible low-budget constrained Gaussian-process optimization workflow and its electromagnetic-design application checks.",
+  "description": "Code, configurations, row-level results, and validation scripts for a reproducible low-budget constrained Gaussian-process optimization workflow and its electromagnetic-design applications.",
   "upload_type": "software",
   "creators": [
     {
@@ -16,11 +16,11 @@
     "wireless power transfer",
     "reproducibility"
   ],
-  "version": "1.4.0",
+  "version": "1.5.0",
   "license": "MIT",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/baolinhnguyen013a-dotcom/reproducible-target-informed-gp",
+      "identifier": "https://github.com/le-dong-xjtu/reproducible-target-informed-gp",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

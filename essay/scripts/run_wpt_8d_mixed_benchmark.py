@@ -23,7 +23,7 @@ from sklearn.exceptions import ConvergenceWarning
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import ConstantKernel, Matern, WhiteKernel
 
-from wpt_partial_inductance_oracle import (
+from wpt_partial_inductance_model import (
     PartialMutualInductanceCalculator,
     PlanarPolygonCoil,
 )

@@ -70,8 +70,8 @@ def configure() -> None:
 def smooth(ax, x, y, *, label, color) -> None:
     x, y = np.asarray(x, dtype=float), np.asarray(y, dtype=float)
     dense_x = np.linspace(x.min(), x.max(), 400)
-    ax.plot(dense_x, PchipInterpolator(x, y)(dense_x), lw=1.8, color=color, label=label)
-    ax.scatter(x, y, s=20, color=color, zorder=3)
+    ax.plot(dense_x, PchipInterpolator(x, y)(dense_x), lw=1.2, color=color, label=label)
+    ax.scatter(x, y, s=10, color=color, zorder=3)
 
 
 def surrogate_seed_summary(rows: list[dict[str, str]]) -> list[dict[str, float | int | str]]:
@@ -117,7 +117,7 @@ def render_surrogate_curves() -> None:
     fig.subplots_adjust(left=.18, right=.98, bottom=.13, top=.98, hspace=.40)
     for method, points in target_means.items():
         x, y = map(np.asarray, zip(*points))
-        axes[0].plot(x, y, lw=1.45, marker="o", markersize=2.2,
+        axes[0].plot(x, y, lw=1.2, marker="o", markersize=2.0,
                      linestyle=styles[method], color=colors[method], label=labels[method])
     axes[0].set(ylabel="Mean bounded loss, $u$", ylim=(-.02, 1.02))
     # The panels have different horizontal variables.  Put the upper panel's
@@ -201,15 +201,15 @@ def render_gaussian_vs_sa() -> None:
     sa = direct_rows_by_target()["simulated_annealing"]
     fig, axes = plt.subplots(2, 1, figsize=(3.5, 3.2), sharex=True)
     fig.subplots_adjust(left=.18, right=.98, bottom=.14, top=.90, hspace=.16)
-    for values, label, color in ((gp, "Global GP ($B=27$)", COLORS["gp"]),
+    for values, label, color in ((gp, "Reusable active GP ($B=27$)", COLORS["gp"]),
                                  (sa, "Simulated annealing", COLORS["simulated_annealing"])):
         x = [v["target"] for v in values]
         smooth(axes[0], x, [v["u"] for v in values], label=label, color=color)
     smooth(axes[1], [v["target"] for v in sa], [v["cost"] for v in sa],
            label="SA: independent search", color=COLORS["simulated_annealing"])
     gp_targets = [v["target"] for v in gp]
-    axes[1].plot(gp_targets, [27] * len(gp_targets), color=COLORS["gp"], lw=1.8,
-                 label="Global GP ($B=27$)")
+    axes[1].plot(gp_targets, [27] * len(gp_targets), color=COLORS["gp"], lw=1.2,
+                 label="Reusable active GP ($B=27$)")
     axes[1].scatter(gp_targets, [27] * len(gp_targets), s=7,
                     color=COLORS["gp"], zorder=3)
     axes[0].set(ylabel="Bounded resistance loss, $u$", ylim=(-.01, .20))
@@ -247,7 +247,7 @@ def loss_summary(rows: list[dict[str, str]]) -> tuple[float, float, float]:
 
 def render_gp_acquisition_comparison() -> None:
     methods = {
-        "Global GP": benchmark_rows(
+        "Reusable active GP": benchmark_rows(
             "results/coil_2d_relative_tolerance/global_dual_gp_budget27/alpha_0p5/results.csv"),
         "GP-cEI": benchmark_rows(
             "results/coil_2d_relative_tolerance/cei_budget27/cei_results.csv"),
@@ -266,14 +266,14 @@ def render_gp_acquisition_comparison() -> None:
 
     summary = {name: loss_summary(rows) for name, rows in methods.items()}
     colors = {
-        "Global GP": "#E45756",
+        "Reusable active GP": "#E45756",
         "GP-cEI": "#4C78A8", "GP-cLCB": "#B279A2", "GP-IVR": "#54A24B",
     }
     fig, axes = plt.subplots(2, 1, figsize=(3.5, 3.8))
     fig.subplots_adjust(left=.18, right=.98, bottom=.13, top=.98, hspace=.40)
     for name, points in target_means.items():
         x, y = map(np.asarray, zip(*points))
-        axes[0].plot(x, y, lw=1.5, marker="o", markersize=2.4, color=colors[name], label=name)
+        axes[0].plot(x, y, lw=1.2, marker="o", markersize=2.0, color=colors[name], label=name)
     largest_target_mean = max(value for points in target_means.values() for _, value in points)
     axes[0].set(xlabel="Target inductance (mH)", ylabel="Mean bounded loss, $u$",
                 ylim=(-.005, min(1.02, max(.125, 1.08 * largest_target_mean))))

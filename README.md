@@ -1,30 +1,32 @@
 # Reproducible Target-Informed GP Optimization
 
-Code, configurations, row-level evidence, and executable audits for
+Code, configurations, row-level results, and reproducibility checks for
 **“Reproducible Target-Informed Gaussian-Process Optimization for
 Data-Efficient Electromagnetic Design.”**
 
-Public repository: https://github.com/baolinhnguyen013a-dotcom/reproducible-target-informed-gp
+Public repository: https://github.com/le-dong-xjtu/reproducible-target-informed-gp
 
 The study develops an auditable low-budget constrained Bayesian-optimization
 workflow. Its core contribution is reproducible allocation of observations:
 deterministic center initialization, uncertainty-aware feasibility discovery,
-fixed Gaussian-process hyperparameter starts, a dimension-aware evidence
-guard, relative constrained-expected-improvement stopping, and a separately
-charged confirmation batch. Wireless-power-transfer (WPT) experiments are
-application checks of the frozen workflow, not a claim of WPT-specific theory
-or universal optimizer superiority.
+fixed Gaussian-process hyperparameter starts, a dimension-dependent minimum
+sample threshold, relative constrained-expected-improvement stopping, and a
+final verification batch included in the evaluation budget. Wireless-power-
+transfer (WPT) experiments test the frozen workflow on numerical and direct
+field-solver models.
 
 ## Reproduced claims
 
 - Matched GP/neural-surrogate and acquisition comparisons on a 1,110-design
   two-dimensional coil lattice.
 - Frozen development/held-out protocol: 73/73 held-out exhaustive optima with
-  21.81 mean oracle calls.
+  21.81 mean model evaluations.
 - Random-six versus deterministic-center adaptive-stopping evidence.
-- A 21-target, eight-dimensional numerical WPT transfer with matched controls.
+- A 21-target, eight-dimensional numerical WPT application with matched
+  controls.
 - A matched 1000-nH Ansys Maxwell application check: 30 accepted evaluations
-  per policy, with complete ledgers and the selected automatic AEDT project.
+  per policy, with complete evaluation histories and the selected automatic
+  AEDT project.
 
 ## Quick verification
 
@@ -40,10 +42,10 @@ python essay/scripts/audit_revised_manuscript.py --numerical-only
 python essay/scripts/audit_aedt_wpt_matched.py
 ```
 
-The first audit checks the numerical experiments, budgets, held-out results,
+The first check covers the numerical experiments, budgets, held-out results,
 stopping histories, deterministic replays, and WPT controls. The second checks
-every claim in the direct Maxwell comparison from the archived accepted-call
-ledgers. It does not require Ansys.
+every claim in the direct Maxwell comparison from the archived accepted-
+evaluation records and runs without Ansys.
 
 ## Repository map
 
@@ -61,8 +63,8 @@ ledgers. It does not require Ansys.
   held-out 2-D coil targets.
 - `essay/scripts/run_automatic_gp_wpt8d.py`: proposed automatic workflow on
   the 8-D WPT benchmark.
-- `essay/scripts/wpt_partial_inductance_oracle.py`: self-contained numerical
-  WPT oracle used by the 8-D runners; it replaces the former omitted generic
+- `essay/scripts/wpt_partial_inductance_model.py`: self-contained numerical
+  WPT model used by the 8-D runners; it replaces the former omitted generic
   `core.py` dependency.
 - `essay/scripts/`: remaining controls, analyses, renderers, and audits.
 - `essay/data/`: row-level evidence and machine-readable summaries.
@@ -93,7 +95,7 @@ sweeps.
 
 ## Maxwell evidence
 
-The accepted-call ledgers, exact optimizers, solver-construction script, logs,
+The accepted-evaluation records, exact optimizers, solver-construction script, logs,
 frozen confirmation plans, summaries, and selected AEDT case are archived in
 `essay/data/aedt_wpt_1000_matched/`. Reproducing new physical calls requires
 Ansys Electronics Desktop 2020.1 on Windows; auditing the reported records does
@@ -114,9 +116,12 @@ are those needed to audit the published claims and their declared controls.
 Machine-readable citation metadata are provided in `CITATION.cff`. A fixed
 Zenodo DOI can be added after the first public GitHub release is archived.
 
-The manuscript author **Le Dong** and the GitHub display name
-**Addy Tong Lok** refer to the same author. The paper name is retained in the
-citation metadata so citations remain consistent with the publication.
+## Author
+
+Le Dong is an undergraduate student in Electrical Engineering at Xi'an
+Jiaotong University. His current research focuses on data-efficient
+electromagnetic design, Gaussian-process optimization, wireless power transfer,
+and reproducible computational methods for engineering applications.
 
 ## License
 

@@ -20,11 +20,11 @@ Required before public release:
 - [x] Create and push the public repository.
 - [x] Replace the paper's pending Code Availability statement with the public
   repository URL and rebuild the five-page PDF.
-- [x] Create GitHub release `v1.4.0`.
-- [ ] Connect the repository to Zenodo, archive `v1.4.0`, and add the assigned
+- [x] Create GitHub release `v1.5.0`.
+- [ ] Connect the repository to Zenodo, archive `v1.5.0`, and add the assigned
   DOI to `CITATION.cff`, `.zenodo.json`, the README, and the paper if timing
   permits.
 - [x] Rerun both audits and verify the release archive from a clean extraction.
 
-The GitHub display name “Addy Tong Lok” and manuscript name “Le Dong” identify
-the same author; this alias is disclosed in the README and citation metadata.
+The repository owner, manuscript author, and citation metadata consistently use
+the name Le Dong.
