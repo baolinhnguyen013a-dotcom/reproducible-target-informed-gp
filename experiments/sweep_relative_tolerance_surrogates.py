@@ -20,7 +20,7 @@ TARGETS = tuple(range(1, 88))
 BUDGETS = tuple(range(20, 41, 2))
 VALIDATION_COUNT = 12
 METHODS = ("baseline", "gp", "ensemble")
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "01_surrogates_budget_20_to_40_10seeds"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "surrogate_budget_sweep"
 
 
 def feasible(point, target):

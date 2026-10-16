@@ -24,7 +24,7 @@ from compare_surrogate_targets import ROOT, truth_grid, write_json
 SEEDS = tuple(range(20261015, 20261025))
 EPSILON = 0.025
 BUDGET = 27
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "05_cei_budget27"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "cei_budget27"
 RESULTS = OUTPUT / "cei_results.csv"
 FIELDS = ("method", "budget", "seed", "target_mH", "qualified",
           "relative_resistance_regret", "bounded_loss_u", "decision_T",

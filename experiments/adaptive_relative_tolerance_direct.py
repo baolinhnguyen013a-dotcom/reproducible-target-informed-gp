@@ -16,7 +16,7 @@ from compare_surrogate_targets import ROOT, truth_grid
 EPSILON = .025
 SEEDS = tuple(range(20261015, 20261025))
 TARGETS = tuple(range(1, 88))
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "02_adaptive_direct_optimizers_10seeds"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "direct_optimizer_baselines"
 ALGORITHMS = ("simulated_annealing", "genetic_algorithm", "particle_swarm")
 
 

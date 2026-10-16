@@ -114,7 +114,7 @@ def main():
     if not 0 <= args.alpha <= 1:
         parser.error("alpha must lie in [0, 1]")
     tag = f"alpha_{args.alpha:g}".replace(".", "p")
-    output = ROOT / "results" / "01_current_relative_tolerance" / "07_global_dual_gp_budget27" / tag
+    output = ROOT / "results" / "coil_2d_relative_tolerance" / "global_dual_gp_budget27" / tag
     results = output / "results.csv"
     output.mkdir(parents=True, exist_ok=True)
     completed = set()

@@ -211,8 +211,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workers", type=int, default=8)
     args = parser.parse_args()
-    output = (ROOT / "results" / "01_current_relative_tolerance" /
-              "08_global_surrogate_2x2_budget27")
+    output = (ROOT / "results" / "coil_2d_relative_tolerance" /
+              "surrogate_family_comparison_budget27")
     output.mkdir(parents=True, exist_ok=True)
     results = output / "results.csv"
     existing = read_rows(results)

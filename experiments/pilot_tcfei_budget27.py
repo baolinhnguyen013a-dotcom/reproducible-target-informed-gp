@@ -25,7 +25,7 @@ SEEDS = tuple(range(20261015, 20261025))
 PILOT_TARGETS = (1, 5, 10, 20, 30, 40, 50, 60, 75, 87)
 EPSILON = 0.025
 BUDGET = 27
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "04_tcfei_budget27_pilot"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "tcfei_budget27_pilot"
 RESULTS = OUTPUT / "tcfei_results.csv"
 FIELDS = ("method", "budget", "seed", "target_mH", "qualified",
           "relative_resistance_regret", "bounded_loss_u", "decision_T",

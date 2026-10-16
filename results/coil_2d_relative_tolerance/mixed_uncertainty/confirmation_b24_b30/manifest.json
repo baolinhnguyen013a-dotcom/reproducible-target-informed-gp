@@ -1,0 +1,75 @@
+{
+  "stage": "mixed_budget_confirmation",
+  "policies": [
+    {
+      "name": "cei",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "cei_all",
+      "weights": [
+        0.55,
+        0.15,
+        0.15,
+        0.15
+      ]
+    }
+  ],
+  "budgets": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "seed_start": 35261011,
+  "seeds": 3,
+  "targets": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    31,
+    34,
+    37,
+    40,
+    43,
+    46,
+    49,
+    52,
+    55,
+    58,
+    61,
+    64,
+    67,
+    70,
+    73,
+    76,
+    79,
+    82,
+    85,
+    87
+  ],
+  "ensemble": 10,
+  "epochs": 180,
+  "workers": 4,
+  "output": "results/coil_2d_relative_tolerance/mixed_uncertainty/confirmation_b24_b30",
+  "n_initial": 6,
+  "n_confirmation": 12,
+  "shared_sample_rule": "all surrogates within a trajectory use identical physical observations",
+  "status": "complete",
+  "completed_note": "paired confirmation intentionally frozen after three complete fresh seeds"
+}

@@ -25,8 +25,8 @@ def read(path):
 
 
 def summarize(rows):
-    baseline_rows = read(base.ROOT/"results"/"01_current_relative_tolerance"/
-                         "05_cei_budget27"/"cei_results.csv")
+    baseline_rows = read(base.ROOT/"results"/"coil_2d_relative_tolerance"/
+                         "cei_budget27"/"cei_results.csv")
     baseline = {(int(r["seed"]), int(float(r["target_mH"]))): r
                 for r in baseline_rows}
     center_rows = read(base.ROWS)

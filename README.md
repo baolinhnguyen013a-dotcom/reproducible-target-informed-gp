@@ -50,7 +50,7 @@ ledgers. It does not require Ansys.
 - `methods/`: maintained surrogate and direct-search implementations.
 - `experiments/`: two-dimensional benchmark runners.
 - `config/`: shared physical and optimizer configurations.
-- `results/01_current_relative_tolerance/`: retained benchmark outputs.
+- `results/coil_2d_relative_tolerance/`: retained benchmark outputs.
 - `essay/scripts/`: WPT, stopping, analysis, rendering, and audit programs.
 - `essay/data/`: row-level evidence and machine-readable summaries.
 - `essay/data/aedt_wpt_1000_matched/`: complete Maxwell run archives.

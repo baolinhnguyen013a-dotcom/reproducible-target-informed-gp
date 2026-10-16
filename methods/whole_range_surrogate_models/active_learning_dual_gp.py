@@ -117,7 +117,7 @@ out = {
     "decision": decision,
     "acquisition_trace": acquisition_trace,
 }
-output = root / "results" / "01_current_relative_tolerance" / "06_global_dual_gp_smoke_test"
+output = root / "results" / "coil_2d_relative_tolerance" / "global_dual_gp_smoke_test"
 output.mkdir(parents=True, exist_ok=True)
 (output / "global_dual_gp_result.json").write_text(json.dumps(out, indent=2) + "\n")
 print(json.dumps(out, indent=2))

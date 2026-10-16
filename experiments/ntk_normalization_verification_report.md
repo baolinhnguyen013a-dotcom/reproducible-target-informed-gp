@@ -116,8 +116,8 @@ numerically stabilized implementation.
 Artifacts:
 
 - implementation: `experiments/ntk_normalization_control.py`;
-- development: `results/01_current_relative_tolerance/10_ntk_normalization_control/development_20/`;
-- confirmation: `results/01_current_relative_tolerance/10_ntk_normalization_control/confirmation_100/`;
-- strict replay: `results/01_current_relative_tolerance/10_ntk_normalization_control/confirmation_100_strict_numerics/`.
+- development: `results/coil_2d_relative_tolerance/ntk_normalization_control/development_20/`;
+- confirmation: `results/coil_2d_relative_tolerance/ntk_normalization_control/confirmation_100/`;
+- strict replay: `results/coil_2d_relative_tolerance/ntk_normalization_control/confirmation_100_strict_numerics/`.
 
 These results have not yet been inserted into the IEEE manuscript.

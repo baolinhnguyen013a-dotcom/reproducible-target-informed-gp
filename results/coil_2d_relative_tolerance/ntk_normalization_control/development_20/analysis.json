@@ -1,0 +1,112 @@
+{
+  "settings": {
+    "seeds": 20,
+    "start_seed": 29261011,
+    "output_dir": "results/coil_2d_relative_tolerance/ntk_normalization_control/development_20",
+    "epochs": 180,
+    "ensemble": 10,
+    "budget": 27,
+    "validations": 12,
+    "alpha": 0.5,
+    "epsilon": 0.025,
+    "methods": [
+      "uncertainty_fixed",
+      "uncertainty_dynamic",
+      "ntk_fixed",
+      "ntk_dynamic"
+    ],
+    "oracle": "reconstructed analytical oracle",
+    "source_sha256": {
+      "coil_relu_100seed_benchmark.py": "23de40cf629b03823c105dea5b0b8958af69f8db62f63af1ae4fbfee04a6cb8b",
+      "coil_first_order_active_benchmark.py": "7ff9b5b21d90d95bd69d06534fb1ea17f9502314cf35f08388e8e947e7f0b87a"
+    }
+  },
+  "means": {
+    "uncertainty_fixed": {
+      "mean_loss": 0.06557475928260945,
+      "feasible_targets": 82.45,
+      "exact_optima": 65.65,
+      "mae_L_mH": 0.8603770151211411,
+      "mae_R_ohm": 0.16680953577234264,
+      "runtime_sec": 0.7804233624999994
+    },
+    "uncertainty_dynamic": {
+      "mean_loss": 0.06960350995046394,
+      "feasible_targets": 82.1,
+      "exact_optima": 63.95,
+      "mae_L_mH": 0.8765551561650167,
+      "mae_R_ohm": 0.16183017689158236,
+      "runtime_sec": 0.760144891500001
+    },
+    "ntk_fixed": {
+      "mean_loss": 0.05626375572718253,
+      "feasible_targets": 83.0,
+      "exact_optima": 69.05,
+      "mae_L_mH": 0.9280932694165145,
+      "mae_R_ohm": 0.272287416231709,
+      "runtime_sec": 0.8911708080999994
+    },
+    "ntk_dynamic": {
+      "mean_loss": 0.06176230756054009,
+      "feasible_targets": 82.7,
+      "exact_optima": 67.5,
+      "mae_L_mH": 0.9984814561066063,
+      "mae_R_ohm": 0.2575304784575163,
+      "runtime_sec": 0.8916909332999998
+    }
+  },
+  "paired_controls": [
+    {
+      "challenger": "uncertainty_dynamic",
+      "baseline": "uncertainty_fixed",
+      "mean_difference": 0.004028750667854497,
+      "median_difference": 0.001479199769907502,
+      "ci95": [
+        -0.017525998736789217,
+        0.025517247759266944
+      ],
+      "wins": 9,
+      "ties": 1,
+      "losses": 10
+    },
+    {
+      "challenger": "ntk_dynamic",
+      "baseline": "ntk_fixed",
+      "mean_difference": 0.00549855183335756,
+      "median_difference": 0.0,
+      "ci95": [
+        -0.004254143459118067,
+        0.01518685589571531
+      ],
+      "wins": 3,
+      "ties": 10,
+      "losses": 7
+    },
+    {
+      "challenger": "ntk_fixed",
+      "baseline": "uncertainty_fixed",
+      "mean_difference": -0.009311003555426921,
+      "median_difference": -0.0020546098442120117,
+      "ci95": [
+        -0.03370157025414061,
+        0.013322983787191961
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 9
+    },
+    {
+      "challenger": "ntk_dynamic",
+      "baseline": "uncertainty_dynamic",
+      "mean_difference": -0.007841202389923857,
+      "median_difference": -0.007592400783498786,
+      "ci95": [
+        -0.02807795681038756,
+        0.011605434957217577
+      ],
+      "wins": 11,
+      "ties": 0,
+      "losses": 9
+    }
+  ]
+}

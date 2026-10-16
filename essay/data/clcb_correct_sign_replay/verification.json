@@ -4,8 +4,8 @@
     "lower_bound": "mean_R - kappa*std_R",
     "kappa": 2.0,
     "maximized_acquisition": "p_feasible*exp(-unit_scale(lower_bound))",
-    "source": "/Users/saishangjiangnandong/Desktop/algorithm_discussion/methods/whole_range_surrogate_models/target_conditioned_gp.py",
-    "source_sha256": "962991eea4a8ff683135b2de917f34fca81f30808b29ee72d84d5683a408a744"
+    "source": "methods/whole_range_surrogate_models/target_conditioned_gp.py",
+    "source_sha256": "e6fc9974fa4ac74b21649f6899d96b3ec3034c33288da3dda02521a5a6372d24"
   },
   "fresh_replay_summary": {
     "cases": 870,

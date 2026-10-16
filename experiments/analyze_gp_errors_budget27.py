@@ -20,7 +20,7 @@ from run_gp_budget_27_relative import (
     fit_gp,
 )
 
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "01_surrogates_budget_20_to_40_10seeds"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "surrogate_budget_sweep"
 GRID_METRICS = OUTPUT / "gp_budget_27_grid_error_by_seed.csv"
 TARGET_DIAGNOSTICS = OUTPUT / "gp_budget_27_target_error_diagnostics.csv"
 SUMMARY = OUTPUT / "gp_budget_27_error_analysis.json"

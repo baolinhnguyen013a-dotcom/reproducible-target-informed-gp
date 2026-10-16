@@ -19,7 +19,7 @@ TARGETS = tuple(range(1, 88))
 VALIDATION_COUNT = 12
 
 BUDGET = 27  # 6 initial + 9 active + 12 target-specific validations
-OUTPUT = ROOT / "results" / "01_current_relative_tolerance" / "01_surrogates_budget_20_to_40_10seeds"
+OUTPUT = ROOT / "results" / "coil_2d_relative_tolerance" / "surrogate_budget_sweep"
 RESULTS = OUTPUT / "gp_budget_27_results.csv"
 MANIFEST = OUTPUT / "gp_budget_27_manifest.json"
 FIELDS = ["method", "budget", "seed", "target_mH", "qualified", "relative_resistance_regret",

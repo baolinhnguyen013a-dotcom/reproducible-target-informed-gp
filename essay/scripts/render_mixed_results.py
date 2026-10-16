@@ -15,7 +15,7 @@ import numpy as np
 ESSAY = Path(__file__).resolve().parents[1]
 PROJECT = ESSAY.parent
 FIGURES = ESSAY / "figures"
-MIXED = PROJECT / "results/01_current_relative_tolerance/12_mixed_uncertainty"
+MIXED = PROJECT / "results/coil_2d_relative_tolerance/mixed_uncertainty"
 WPT = ESSAY / "data/wpt_8d_mixed"
 WPT_LOW = ESSAY / "data/wpt_8d_low_auxiliary"
 

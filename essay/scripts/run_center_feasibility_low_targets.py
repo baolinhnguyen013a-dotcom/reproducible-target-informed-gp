@@ -45,8 +45,8 @@ def main():
     rows = read(ROWS)
     if len(rows) != len(base.SEEDS)*len(TARGETS):
         raise RuntimeError(f"incomplete targeted test: {len(rows)} rows")
-    baseline_rows = read(base.ROOT/"results"/"01_current_relative_tolerance"/
-                         "05_cei_budget27"/"cei_results.csv")
+    baseline_rows = read(base.ROOT/"results"/"coil_2d_relative_tolerance"/
+                         "cei_budget27"/"cei_results.csv")
     baseline = {(int(r["seed"]), int(float(r["target_mH"]))): r
                 for r in baseline_rows}
     values = np.asarray([float(r["bounded_loss_u"]) for r in rows])

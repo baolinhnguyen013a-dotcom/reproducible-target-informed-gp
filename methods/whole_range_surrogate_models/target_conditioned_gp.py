@@ -238,7 +238,7 @@ out = {
     "final_validation": final,
     "acquisition_trace": acquisition_trace,
 }
-output = root / "results" / "01_current_relative_tolerance" / "03_proposed_tcfei_smoke_test"
+output = root / "results" / "coil_2d_relative_tolerance" / "tcfei_smoke_test"
 output.mkdir(parents=True, exist_ok=True)
 (output / "target_conditioned_gp_result.json").write_text(json.dumps(out, indent=2) + "\n")
 print(json.dumps(out, indent=2))

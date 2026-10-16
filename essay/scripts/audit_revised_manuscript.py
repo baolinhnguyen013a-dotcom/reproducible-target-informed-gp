@@ -32,12 +32,12 @@ def assert_close(a, b, tolerance=2e-13):
 
 def audit_u_from_regret():
     paths = [
-        ROOT/"results/01_current_relative_tolerance/08_global_surrogate_2x2_budget27/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/surrogate_family_comparison_budget27/results.csv",
         ESSAY/"data/direct_optimizer_results_raw_10seeds.csv",
-        ROOT/"results/01_current_relative_tolerance/07_global_dual_gp_budget27/alpha_0p5/results.csv",
-        ROOT/"results/01_current_relative_tolerance/05_cei_budget27/cei_results.csv",
-        ROOT/"results/01_current_relative_tolerance/06_standard_bo_budget27/clcb_wl1_wg0_a0p5/results.csv",
-        ROOT/"results/01_current_relative_tolerance/06_standard_bo_budget27/ivr_wl1_wg0_a0p5/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/global_dual_gp_budget27/alpha_0p5/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/cei_budget27/cei_results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/standard_bo_budget27/clcb_wl1_wg0_a0p5/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/standard_bo_budget27/ivr_wl1_wg0_a0p5/results.csv",
     ]
     count = 0
     for path in paths:
@@ -68,8 +68,8 @@ def coil_oracle():
 def audit_mixed_u_and_pairing():
     values = coil_oracle()
     paths = [
-        ROOT/"results/01_current_relative_tolerance/12_mixed_uncertainty/development/results.csv",
-        ROOT/"results/01_current_relative_tolerance/12_mixed_uncertainty/confirmation_b24_b30/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/mixed_uncertainty/development/results.csv",
+        ROOT/"results/coil_2d_relative_tolerance/mixed_uncertainty/confirmation_b24_b30/results.csv",
     ]
     count = 0
     confirmation = None
@@ -182,7 +182,7 @@ def audit_wpt_budget_sweep(folder):
 def audit_center_start_evidence():
     oracle = coil_oracle()
     baseline = {(int(row["seed"]), int(float(row["target_mH"]))): row
-                for row in rows(ROOT/"results/01_current_relative_tolerance/05_cei_budget27/cei_results.csv")}
+                for row in rows(ROOT/"results/coil_2d_relative_tolerance/cei_budget27/cei_results.csv")}
     folders = {
         "full": ESSAY/"data/center_start_cei_lr/results.csv",
         "screen": ESSAY/"data/center_feasibility_smoke/results.csv",

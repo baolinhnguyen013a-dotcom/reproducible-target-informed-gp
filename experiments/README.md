@@ -9,4 +9,4 @@
 - `analyze_gp_errors_budget27.py`: reproducible held-out calibration, target-bin, candidate-recall, and decision-pool error analysis for that checkpoint.
 
 Current result locations are defined in the two current runners and correspond to
-`results/01_current_relative_tolerance/`. The scripts are not run automatically.
+`results/coil_2d_relative_tolerance/`. The scripts are not run automatically.

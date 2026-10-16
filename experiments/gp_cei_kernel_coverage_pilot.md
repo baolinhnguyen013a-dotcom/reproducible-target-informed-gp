@@ -45,5 +45,5 @@ than confirmation.
 
 Artifacts:
 
-- `results/01_current_relative_tolerance/06_standard_bo_budget27/cei_wl0p75_wg0p25_a0p5/results.csv`
-- `results/01_current_relative_tolerance/06_standard_bo_budget27/cei_wl0p75_wg0p25_a0p5/summary.json`
+- `results/coil_2d_relative_tolerance/standard_bo_budget27/cei_wl0p75_wg0p25_a0p5/results.csv`
+- `results/coil_2d_relative_tolerance/standard_bo_budget27/cei_wl0p75_wg0p25_a0p5/summary.json`

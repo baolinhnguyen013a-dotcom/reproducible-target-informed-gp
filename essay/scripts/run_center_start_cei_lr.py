@@ -237,8 +237,8 @@ def metrics(rows):
 
 
 def analyze(rows):
-    baseline_path = (ROOT/"results"/"01_current_relative_tolerance"/
-                     "05_cei_budget27"/"cei_results.csv")
+    baseline_path = (ROOT/"results"/"coil_2d_relative_tolerance"/
+                     "cei_budget27"/"cei_results.csv")
     baseline = {(int(r["seed"]), int(float(r["target_mH"]))): r
                 for r in read_rows(baseline_path)}
     challenger = {(int(r["seed"]), int(r["target_mH"])): r for r in rows}

@@ -103,7 +103,7 @@ development/confirmation study.
 
 - Implementation: `coil_relu_100seed_benchmark.py`
 - Imported instructions: `COIL_RELU_100SEED_README.md`
-- Full results: `../results/01_current_relative_tolerance/09_relu_gate_acquisition/full_relu_100_plus_100/`
+- Full results: `../results/coil_2d_relative_tolerance/relu_gate_acquisition/full_relu_100_plus_100/`
 - The optional GP run was stopped because the supplied comparator produced
   repeated numerical warnings and excessive kernel-optimization cost. It is
   not needed for the paired lambda ablation and is not used in this conclusion.

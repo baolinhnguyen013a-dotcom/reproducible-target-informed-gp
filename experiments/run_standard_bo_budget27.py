@@ -105,7 +105,7 @@ def main():
         parser.error("alpha must lie in [0, 1]")
     targets = tuple(args.targets)
     tag = f"{args.mode}_wl{args.local_weight:g}_wg{args.global_weight:g}_a{args.alpha:g}".replace(".", "p")
-    output = ROOT / "results" / "01_current_relative_tolerance" / "06_standard_bo_budget27" / tag
+    output = ROOT / "results" / "coil_2d_relative_tolerance" / "standard_bo_budget27" / tag
     results = output / "results.csv"
     output.mkdir(parents=True, exist_ok=True)
     write_json(output / "manifest.json", {

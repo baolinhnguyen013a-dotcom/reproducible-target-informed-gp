@@ -28,7 +28,7 @@ whole manuscript.
 Ten development seeds (31261011--31261020), all 87 targets, and B=20 were used
 to compare beta = 0.05, 0.10, and 0.20.  The prespecified lowest-mean-loss rule
 selected beta=0.20.  See
-`results/01_current_relative_tolerance/11_cei_neural_hybrid/development_b20/FROZEN_WEIGHT_SELECTION.md`.
+`results/coil_2d_relative_tolerance/cei_neural_hybrid/development_b20/FROZEN_WEIGHT_SELECTION.md`.
 
 ## Fresh confirmation
 
@@ -72,5 +72,5 @@ rather than a statistically confirmed ranking.
 
 - Runner: `experiments/run_cei_neural_hybrid.py`
 - Analyzer: `experiments/analyze_cei_neural_hybrid.py`
-- Development data: `results/01_current_relative_tolerance/11_cei_neural_hybrid/development_b20/`
-- Confirmation data and analysis: `results/01_current_relative_tolerance/11_cei_neural_hybrid/confirmation_b20_b27/`
+- Development data: `results/coil_2d_relative_tolerance/cei_neural_hybrid/development_b20/`
+- Confirmation data and analysis: `results/coil_2d_relative_tolerance/cei_neural_hybrid/confirmation_b20_b27/`

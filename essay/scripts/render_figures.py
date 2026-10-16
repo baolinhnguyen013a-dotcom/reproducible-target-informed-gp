@@ -92,7 +92,7 @@ def surrogate_seed_summary(rows: list[dict[str, str]]) -> list[dict[str, float |
 
 def render_surrogate_curves() -> None:
     rows = benchmark_rows(
-        "results/01_current_relative_tolerance/08_global_surrogate_2x2_budget27/results.csv"
+        "results/coil_2d_relative_tolerance/surrogate_family_comparison_budget27/results.csv"
     )
     labels = {
         "gp_random": "GP, random sampling",
@@ -190,7 +190,7 @@ def gp_trimmed_by_target(rows: list[dict[str, str]], budget: int = 27) -> list[d
 
 def render_gaussian_vs_sa() -> None:
     rows = benchmark_rows(
-        "results/01_current_relative_tolerance/08_global_surrogate_2x2_budget27/results.csv"
+        "results/coil_2d_relative_tolerance/surrogate_family_comparison_budget27/results.csv"
     )
     grouped = defaultdict(list)
     for row in rows:
@@ -248,13 +248,13 @@ def loss_summary(rows: list[dict[str, str]]) -> tuple[float, float, float]:
 def render_gp_acquisition_comparison() -> None:
     methods = {
         "Global GP": benchmark_rows(
-            "results/01_current_relative_tolerance/07_global_dual_gp_budget27/alpha_0p5/results.csv"),
+            "results/coil_2d_relative_tolerance/global_dual_gp_budget27/alpha_0p5/results.csv"),
         "GP-cEI": benchmark_rows(
-            "results/01_current_relative_tolerance/05_cei_budget27/cei_results.csv"),
+            "results/coil_2d_relative_tolerance/cei_budget27/cei_results.csv"),
         "GP-cLCB": benchmark_rows(
-            "results/01_current_relative_tolerance/06_standard_bo_budget27/clcb_wl1_wg0_a0p5/results.csv"),
+            "results/coil_2d_relative_tolerance/standard_bo_budget27/clcb_wl1_wg0_a0p5/results.csv"),
         "GP-IVR": benchmark_rows(
-            "results/01_current_relative_tolerance/06_standard_bo_budget27/ivr_wl1_wg0_a0p5/results.csv"),
+            "results/coil_2d_relative_tolerance/standard_bo_budget27/ivr_wl1_wg0_a0p5/results.csv"),
     }
     target_means = {}
     for name, rows in methods.items():

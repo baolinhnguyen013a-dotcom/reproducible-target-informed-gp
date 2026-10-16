@@ -164,7 +164,7 @@ def read(path):
 
 def summarize(rows, policies):
     baseline = {(int(r["seed"]), int(float(r["target_mH"]))): r for r in read(
-        base.ROOT/"results"/"01_current_relative_tolerance"/"05_cei_budget27"/"cei_results.csv")}
+        base.ROOT/"results"/"coil_2d_relative_tolerance"/"cei_budget27"/"cei_results.csv")}
     output = []
     for policy in policies:
         group = [r for r in rows if r["policy"] == policy]
