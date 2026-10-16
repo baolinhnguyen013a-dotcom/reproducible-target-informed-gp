@@ -5,7 +5,7 @@ inductance target only.
 
 `surrogates/neural_surrogate_scan.json` configures the original fixed-sample NN
 scan: 16 training samples and a validation fraction yielding 10 grid validations.
-It is read by `methods/surrogate_selection/neural_surrogate_scan.py`. The
+It is read by `methods/surrogate_selection/nn_fixed_sample.py`. The
 script uses the declared `seed`; there is no second implementation hidden in a
 shared engine.
 
@@ -13,11 +13,11 @@ The other files in `surrogates/` configure the standalone active-learning method
 
 | Configuration | Method script | Initial samples | Additional samples (maximum) | Final validation |
 |---|---|---:|---:|---:|
-| `surrogates/gaussian_process.json` | `surrogate_selection/gp_uncertainty_sampling.py` | 6 | 10 (16 total) | 10 |
-| `surrogates/deep_ensemble.json` | `surrogate_selection/ensemble_uncertainty_sampling.py` | 6 | 10 (16 total) | 10 |
-| `surrogates/mc_dropout_bnn.json` | `surrogate_selection/mc_dropout_uncertainty_sampling.py` | 6 | 10 | 10 |
-| `surrogates/target_conditioned_gp.json` | `target_informed_gp/acquisition_policies.py` | 6 | 9 (15 total) | 12 |
-| `surrogates/global_dual_gp.json` | `surrogate_selection/global_dual_gp.py` | 6 | 9 (15 total) | 12 |
+| `surrogates/gaussian_process.json` | `surrogate_selection/gp_single_response.py` | 6 | 10 (16 total) | 10 |
+| `surrogates/deep_ensemble.json` | `surrogate_selection/nn_deep_ensemble.py` | 6 | 10 (16 total) | 10 |
+| `surrogates/mc_dropout_bnn.json` | `surrogate_selection/nn_mc_dropout.py` | 6 | 10 | 10 |
+| `surrogates/target_conditioned_gp.json` | `target_informed_gp/gp_acquisition_policies.py` | 6 | 9 (15 total) | 12 |
+| `surrogates/global_dual_gp.json` | `surrogate_selection/gp_dual_response.py` | 6 | 9 (15 total) | 12 |
 
 `maximum_true_evaluations` includes the initial samples, but excludes final
 validation. A `sigma_tolerance_mH` of zero disables ensemble early stopping; it also checks
@@ -30,7 +30,7 @@ mixed local/global GP implementation. Its `tcfei` mode is an archived research
 prototype and is not the proposed method in the current paper. The tested
 representatives are conventional GP-cEI, probability-weighted GP-cLCB, and
 weighted GP-IVR. The older
-`methods/target_informed_gp/historical_budget80_cei.py` belongs to this same
+`methods/target_informed_gp/gp_cei_legacy_budget80.py` belongs to this same
 surrogate-based-optimizer category, but retains a legacy 16-initial/80-total
 protocol and is therefore not substituted into the matched B=27 comparison.
 

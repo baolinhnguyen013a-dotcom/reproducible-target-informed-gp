@@ -22,10 +22,10 @@ from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
 METHODS = {
-    "baseline": ("neural_surrogate_scan.py", "neural_surrogate_scan.json"),
-    "gp": ("gp_uncertainty_sampling.py", "gaussian_process.json"),
-    "ensemble": ("ensemble_uncertainty_sampling.py", "deep_ensemble.json"),
-    "bnn": ("mc_dropout_uncertainty_sampling.py", "mc_dropout_bnn.json"),
+    "baseline": ("nn_fixed_sample.py", "neural_surrogate_scan.json"),
+    "gp": ("gp_single_response.py", "gaussian_process.json"),
+    "ensemble": ("nn_deep_ensemble.py", "deep_ensemble.json"),
+    "bnn": ("nn_mc_dropout.py", "mc_dropout_bnn.json"),
 }
 
 

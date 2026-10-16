@@ -7,13 +7,13 @@ development.
 
 `surrogate_selection/` contains the target-independent GP and tested neural
 surrogates used to decide which uncertainty model should support subsequent
-optimization. `global_dual_gp.py` is the reusable two-response GP control.
+optimization. `gp_dual_response.py` is the reusable two-response GP control.
 
 ## 2. Target-informed acquisition
 
-`target_informed_gp/acquisition_policies.py` contains the matched cEI, cLCB,
+`target_informed_gp/gp_acquisition_policies.py` contains the matched cEI, cLCB,
 IVR, and retained TC-FEI prototype used by the acquisition comparison.
-`historical_budget80_cei.py` is a self-contained earlier reference and is not
+`gp_cei_legacy_budget80.py` is a self-contained earlier reference and is not
 used for the paper's matched B=27 result.
 
 The deterministic center initialization, feasibility/uncertainty start,

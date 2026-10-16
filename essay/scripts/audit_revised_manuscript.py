@@ -474,7 +474,7 @@ def audit_clcb_replay():
     folder = ESSAY/"data/clcb_correct_sign_replay"
     report = json.loads((folder/"verification.json").read_text())
     data = rows(folder/"results.csv")
-    source = ROOT/"methods/target_informed_gp/acquisition_policies.py"
+    source = ROOT/"methods/target_informed_gp/gp_acquisition_policies.py"
     assert report["status"] == "complete"
     assert report["mismatch_count"] == 0
     assert len(data) == report["fresh_rows"] == report["reference_rows"] == 870

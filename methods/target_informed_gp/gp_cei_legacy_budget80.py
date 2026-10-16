@@ -1,6 +1,6 @@
 """Self-contained historical 16-initial/80-total constrained GP-EI run.
 
-The paper's matched B=27 acquisition study uses ``acquisition_policies.py``.
+The paper's matched B=27 acquisition study uses ``gp_acquisition_policies.py``.
 This older reference is retained to document the route to that experiment and
 does not depend on a hidden shared engine.
 """

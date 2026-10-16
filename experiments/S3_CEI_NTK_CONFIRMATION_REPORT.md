@@ -9,7 +9,7 @@ must not be substituted for the manuscript GP results.
 
 The S3 experiment instead implements the cEI and final-ranking equations in the
 manuscript repository's current
-`methods/target_informed_gp/acquisition_policies.py`.  Before fresh
+`methods/target_informed_gp/gp_acquisition_policies.py`.  Before fresh
 confirmation, three archived manuscript cases were replayed with the new S3
 runner:
 

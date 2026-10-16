@@ -43,7 +43,7 @@ def run_one(task):
             "global_response_alpha": alpha,
         })
         write_json(settings_path, settings)
-        script = workspace / "methods" / "target_informed_gp" / "acquisition_policies.py"
+        script = workspace / "methods" / "target_informed_gp" / "gp_acquisition_policies.py"
         with open(os.devnull, "w") as sink, contextlib.redirect_stdout(sink), contextlib.redirect_stderr(sink):
             values = runpy.run_path(str(script), run_name="__main__")
         decision = values["decision"]

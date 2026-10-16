@@ -20,8 +20,8 @@ Required before public release:
 - [x] Create and push the public repository.
 - [x] Replace the paper's pending Code Availability statement with the public
   repository URL and rebuild the five-page PDF.
-- [x] Create GitHub release `v1.2.0`.
-- [ ] Connect the repository to Zenodo, archive `v1.2.0`, and add the assigned
+- [x] Create GitHub release `v1.3.0`.
+- [ ] Connect the repository to Zenodo, archive `v1.3.0`, and add the assigned
   DOI to `CITATION.cff`, `.zenodo.json`, the README, and the paper if timing
   permits.
 - [x] Rerun both audits and verify the release archive from a clean extraction.
