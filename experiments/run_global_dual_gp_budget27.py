@@ -49,7 +49,7 @@ def run_seed(task):
         settings = json.loads(settings_path.read_text())
         settings.update({"seed": seed, "alpha": alpha})
         write_json(settings_path, settings)
-        script = workspace / "methods" / "whole_range_surrogate_models" / "active_learning_dual_gp.py"
+        script = workspace / "methods" / "surrogate_selection" / "global_dual_gp.py"
         with open(os.devnull, "w") as sink, contextlib.redirect_stdout(sink), contextlib.redirect_stderr(sink):
             values = runpy.run_path(str(script), run_name="__main__")
         config = json.loads((workspace / "config" / "coil_problem.json").read_text())

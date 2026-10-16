@@ -23,9 +23,9 @@ from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parents[1]
 METHODS = {
     "baseline": ("neural_surrogate_scan.py", "neural_surrogate_scan.json"),
-    "gp": ("active_learning_gp.py", "gaussian_process.json"),
-    "ensemble": ("active_learning_ensemble.py", "deep_ensemble.json"),
-    "bnn": ("active_learning_mc_dropout_bnn.py", "mc_dropout_bnn.json"),
+    "gp": ("gp_uncertainty_sampling.py", "gaussian_process.json"),
+    "ensemble": ("ensemble_uncertainty_sampling.py", "deep_ensemble.json"),
+    "bnn": ("mc_dropout_uncertainty_sampling.py", "mc_dropout_bnn.json"),
 }
 
 
@@ -52,7 +52,7 @@ def worker(workspace, method):
     """Run original code, then collect predictions and sample IDs from its globals."""
     import numpy as np
 
-    script = workspace / "methods" / "whole_range_surrogate_models" / METHODS[method][0]
+    script = workspace / "methods" / "surrogate_selection" / METHODS[method][0]
     with (workspace / "stdout.log").open("w") as log, contextlib.redirect_stdout(log):
         values = runpy.run_path(str(script), run_name="__main__")
     if method == "baseline":
@@ -217,7 +217,7 @@ def main():
     output = args.output or ROOT / "results" / ("target_sweep_" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ"))
     output.mkdir(parents=True, exist_ok=False)
     shutil.copytree(ROOT / "config", output / "config_snapshot")
-    source = ROOT / "methods" / "whole_range_surrogate_models"
+    source = ROOT / "methods" / "surrogate_selection"
     shutil.copytree(source, output / "scripts_snapshot", ignore=shutil.ignore_patterns("__pycache__", ".DS_Store"))
     write_json(output / "manifest.json", {
         "arguments": {k: str(v) if isinstance(v, Path) else v for k, v in vars(args).items()},
@@ -239,7 +239,7 @@ def main():
                     with tempfile.TemporaryDirectory(prefix="coil-sweep-") as temporary:
                         workspace = Path(temporary)
                         shutil.copytree(output / "config_snapshot", workspace / "config")
-                        shutil.copytree(output / "scripts_snapshot", workspace / "methods" / "whole_range_surrogate_models")
+                        shutil.copytree(output / "scripts_snapshot", workspace / "methods" / "surrogate_selection")
                         (workspace / "results").mkdir()
                         problem = json.loads(json.dumps(config))
                         problem["inductance_target"] = {"mH": target, "tolerance_mH": tolerance}

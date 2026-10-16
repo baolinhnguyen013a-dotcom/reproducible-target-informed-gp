@@ -16,7 +16,7 @@ import run_standard_bo_budget27 as benchmark  # noqa: E402
 
 
 OUT = ROOT / "essay" / "data" / "clcb_correct_sign_replay"
-SOURCE = ROOT / "methods" / "whole_range_surrogate_models" / "target_conditioned_gp.py"
+SOURCE = ROOT / "methods" / "target_informed_gp" / "acquisition_policies.py"
 REFERENCE = (ROOT / "results" / "coil_2d_relative_tolerance" /
              "standard_bo_budget27" / "clcb_wl1_wg0_a0p5" / "results.csv")
 

@@ -1,0 +1,10 @@
+# Target-informed GP methods
+
+`acquisition_policies.py` is the maintained matched implementation for cEI,
+cLCB, IVR, and the retained TC-FEI prototype. It fits separate inductance and
+resistance GPs and keeps every physically evaluated point in the final decision
+pool.
+
+`historical_budget80_cei.py` is an earlier self-contained 80-call reference.
+It is retained for provenance but is not used for the paper's B=27 comparison
+or automatic stopping results.

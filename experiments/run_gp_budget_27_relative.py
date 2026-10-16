@@ -33,8 +33,8 @@ def fit_gp(seed: int, config: dict, grid: list[dict]) -> dict:
         workspace = Path(directory)
         shutil.copytree(ROOT / "config", workspace / "config")
         shutil.copytree(
-            ROOT / "methods" / "whole_range_surrogate_models",
-            workspace / "methods" / "whole_range_surrogate_models",
+            ROOT / "methods" / "surrogate_selection",
+            workspace / "methods" / "surrogate_selection",
         )
         (workspace / "results").mkdir()
         settings_path = workspace / "config" / "surrogates" / "gaussian_process.json"

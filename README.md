@@ -47,7 +47,12 @@ ledgers. It does not require Ansys.
 
 ## Repository map
 
-- `methods/`: maintained surrogate and direct-search implementations.
+- `methods/surrogate_selection/`: target-independent GP and neural-surrogate
+  comparisons from the first experimental stage.
+- `methods/target_informed_gp/`: cEI/cLCB/IVR acquisition policies from the
+  second stage, plus one clearly marked historical reference.
+- `methods/direct_search_baselines/`: self-contained exhaustive, SA, GA, and
+  PSO comparison scripts; no shared optimizer engine is required.
 - `experiments/`: two-dimensional benchmark runners.
 - `config/`: shared physical and optimizer configurations.
 - `results/coil_2d_relative_tolerance/`: retained benchmark outputs.

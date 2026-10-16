@@ -39,7 +39,7 @@ def fit(method, seed, total_budget, config, grid, tolerance):
     with tempfile.TemporaryDirectory(prefix="coil-budget-curve-") as directory:
         workspace = Path(directory)
         shutil.copytree(ROOT / "config", workspace / "config")
-        shutil.copytree(ROOT / "methods" / "whole_range_surrogate_models", workspace / "methods" / "whole_range_surrogate_models")
+        shutil.copytree(ROOT / "methods" / "surrogate_selection", workspace / "methods" / "surrogate_selection")
         (workspace / "results").mkdir()
         filenames = {"baseline": "neural_surrogate_scan.json", "gp": "gaussian_process.json", "ensemble": "deep_ensemble.json"}
         settings_path = workspace / "config" / "surrogates" / filenames[method]

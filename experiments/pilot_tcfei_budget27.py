@@ -47,7 +47,7 @@ def run_one(task):
         settings = json.loads(settings_path.read_text())
         settings.update({"seed": seed, "target_mH": target})
         write_json(settings_path, settings)
-        script = workspace / "methods" / "whole_range_surrogate_models" / "target_conditioned_gp.py"
+        script = workspace / "methods" / "target_informed_gp" / "acquisition_policies.py"
         with open(os.devnull, "w") as sink, contextlib.redirect_stdout(sink), contextlib.redirect_stderr(sink):
             values = runpy.run_path(str(script), run_name="__main__")
         decision = values["decision"]
